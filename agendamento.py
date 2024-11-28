@@ -3,8 +3,9 @@ import schedule
 from telethon import TelegramClient
 
 # Substitua pelos seus próprios valores
-api_id = 'YOUR_API_ID'
-api_hash = 'YOUR_API_HASH'
+api_id = 26644897'YOUR_API_ID'// YOUR_API_ID
+api_hash = 32468ba28dd454c3b21ff003f4fa2262
+ 'YOUR_API_HASH'
 phone_number = 'YOUR_PHONE_NUMBER'
 group_username = 'GROUP_USERNAME_OR_ID'
 message = 'Sua mensagem agendada'
