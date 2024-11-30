@@ -1,14 +1,13 @@
 import time
 import schedule
 from telethon import TelegramClient
-
+#pip install telethon schedule
 # Substitua pelos seus próprios valores
-api_id = 26644897'YOUR_API_ID'// YOUR_API_ID
-api_hash = 32468ba28dd454c3b21ff003f4fa2262
- 'YOUR_API_HASH'
-phone_number = 'YOUR_PHONE_NUMBER'
-group_username = 'GROUP_USERNAME_OR_ID'
-message = 'Sua mensagem agendada'
+api_id = '26644897' # YOUR_API_ID
+api_hash = '32468ba28dd454c3b21ff003f4fa2262' #'YOUR_API_HASH'
+phone_number =  '+5511912363604'#'YOUR_PHONE_NUMBER'
+group_username = '-2045671705' #
+message = 'testando'
 
 # Crie o cliente do Telegram
 client = TelegramClient('session_name', api_id, api_hash)
@@ -28,8 +27,8 @@ if __name__ == "__main__":
     client.start(phone=phone_number)
 
     # Defina o horário e minutos para agendar a mensagem
-    hour = 14  # Exemplo: 14 horas
-    minute = 30  # Exemplo: 30 minutos
+    hour = 23  # Exemplo: 14 horas
+    minute = 50  # Exemplo: 30 minutos
 
     # Agende a mensagem
     schedule_message(hour, minute)
