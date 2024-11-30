@@ -3,8 +3,8 @@ import schedule
 from telethon import TelegramClient
 #pip install telethon schedule
 # Substitua pelos seus próprios valores
-api_id = '26644897' # YOUR_API_ID
-api_hash = '32468ba28dd454c3b21ff003f4fa2262' #'YOUR_API_HASH'
+api_id = '29321295' # YOUR_API_ID
+api_hash = 'bbc2110227aefbf6f0c30d6691366f78' #'YOUR_API_HASH'
 phone_number =  '+5511912363604'#'YOUR_PHONE_NUMBER'
 group_username = '-2045671705' #
 message = 'testando'
