@@ -2,7 +2,7 @@ from telethon import TelegramClient, events
 import schedule
 import time
 from datetime import datetime
-
+#pip install telethon
 # Substitua pelos seus valores
 api_id = '29321295'
 api_hash = 'bbc2110227aefbf6f0c30d6691366f78'
