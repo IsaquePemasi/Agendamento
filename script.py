@@ -13,11 +13,11 @@ pyautogui.hotkey('ctrl', 'v')
 pyautogui.press('enter')
 
 # Pressionar ESC três vezes
-for _ in range(3):
-    pyautogui.press('esc')
+for _ in range(6):
+    pyautogui.press('backspace')
 
-# Digitar 2030
-pyautogui.write('2030')
+# Digitar 2130
+pyautogui.write('2330')
 
 # Pressionar ENTER
 pyautogui.press('enter')
