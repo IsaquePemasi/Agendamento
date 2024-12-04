@@ -23,7 +23,7 @@ while start_hour < end_hour or (start_hour == end_hour and start_minute <= end_m
     pyautogui.press('enter')
 
     # Pressionar BACKSPACE seis vezes
-    for _ in range(6):
+    for _ in range(5):
         pyautogui.press('backspace')
 
     # Digitar o horário atual

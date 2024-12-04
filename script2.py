@@ -5,8 +5,8 @@ import time
 time.sleep(2)
 
 # Definir o horário inicial e final
-start_hour = 1
-start_minute = 0
+start_hour = 22
+start_minute = 30
 end_hour = 23
 end_minute = 30
 
