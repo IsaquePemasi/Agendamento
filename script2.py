@@ -7,6 +7,7 @@ time.sleep(2)
 # Definir o horário inicial e final
 start_hour = 22
 start_minute = 30
+teste
 end_hour = 23
 end_minute = 30
 

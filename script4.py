@@ -1,4 +1,4 @@
-import pyautogui
+script4.py073import pyautogui
 
 # horarios = [
 #     '0100', '0130', '0200', '0230', '0300', '0330', '0400', '0430', '0500', '0530',
@@ -9,7 +9,9 @@ import pyautogui
 # ]
 
 horarios = [
-'2230', '2330'
+'2230', '2330'0600600601
+teste
+063063
 ]
 
 for horario in horarios:
