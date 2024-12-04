@@ -1,5 +1,6 @@
 # pip install pyautogui
 
+import random
 import pyautogui
 import time
 
@@ -20,7 +21,8 @@ for _ in range(6):
 pyautogui.write('2')
 pyautogui.write('3')
 pyautogui.write('5')
-pyautogui.write('0')
+pyautogui.write(str(random.randint(0, 9)))
+
 
 # Pressionar ENTER
 pyautogui.press('enter')
