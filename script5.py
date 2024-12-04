@@ -109,6 +109,25 @@ pyautogui.press('enter')
 for _ in range(6):
     pyautogui.press('backspace')
 
+# Digitar 0330
+pyautogui.write('0')
+pyautogui.write('4')
+pyautogui.write('0')
+pyautogui.write('0')
+
+# Pressionar ENTER
+pyautogui.press('enter')
+
+# Pressionar CTRL + V
+pyautogui.hotkey('ctrl', 'v')
+
+# Pressionar ENTER
+pyautogui.press('enter')
+
+# Pressionar ESC três vezes
+for _ in range(6):
+    pyautogui.press('backspace')
+
 # Digitar 1030
 pyautogui.write('1')
 pyautogui.write('0')
