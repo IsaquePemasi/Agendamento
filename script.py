@@ -17,7 +17,7 @@ for _ in range(6):
     pyautogui.press('backspace')
 
 # Digitar 2130
-pyautogui.write('2330')
+pyautogui.write('0030')
 
 # Pressionar ENTER
 pyautogui.press('enter')
