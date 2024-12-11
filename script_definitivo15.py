@@ -7,7 +7,6 @@ import time
 # Aguardar 2 segundos antes de começar para dar tempo de colocar o foco na janela correta
 time.sleep(2)
 
-
 # Pressionar CTRL + V
 pyautogui.hotkey('ctrl', 'v')
 
