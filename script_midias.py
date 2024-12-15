@@ -13,7 +13,7 @@ pyautogui.hotkey('ctrl', 'o')
 num_tabs = 10
 
 for _ in range(num_tabs):
-    time.sleep(0.5)  # Pausa
+    time.sleep(0.4)  # Pausa
     pyautogui.press('tab')  # Pressiona 'Tab'
 
 
