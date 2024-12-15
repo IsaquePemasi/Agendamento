@@ -9,54 +9,45 @@ time.sleep(2)
 
 # Pressionar CTRL + V
 pyautogui.hotkey('ctrl', 'o')
-time.sleep(0.5)
-pyautogui.hotkey('ctrl', 'tab')
-time.sleep(0.5)
-pyautogui.hotkey('ctrl', 'tab')
-time.sleep(0.5)
-pyautogui.hotkey('ctrl', 'tab')
-time.sleep(0.5)
-pyautogui.hotkey('ctrl', 'tab')
-time.sleep(0.5)
-pyautogui.hotkey('ctrl', 'tab')
-time.sleep(0.5)
-pyautogui.hotkey('ctrl', 'tab')
+pyautogui.press('tab')
+time.sleep(0.1)
+pyautogui.press('tab')
+time.sleep(0.1)
+pyautogui.press('tab')
+time.sleep(0.1)
+pyautogui.press('tab')
+time.sleep(0.1)
+pyautogui.press('tab')
+time.sleep(0.1)
+pyautogui.press('tab')
+time.sleep(0.1)
+pyautogui.press('tab')
+time.sleep(0.1)
+pyautogui.press('tab')
+time.sleep(0.1)
+pyautogui.press('tab')
+time.sleep(0.1)
+pyautogui.press('tab')
+time.sleep(0.1)
+pyautogui.press('tab')
+time.sleep(0.1)
+pyautogui.press('right')
+time.sleep(0.1)
+pyautogui.press('left')
+time.sleep(0.1)
+pyautogui.press('enter')
+time.sleep(0.1)
+pyautogui.hotkey('ctrl', 'v')
+time.sleep(0.1)
+pyautogui.press('enter')
+# Pressionar ESC três vezes
+for _ in range(6):
+    pyautogui.press('backspace')
 
-    # pyautogui.hotkey('ctrl', 'tab')
-    # pyautogui.hotkey('ctrl', 'tab')
-    # pyautogui.hotkey('ctrl', 'tab')
-    # pyautogui.hotkey('ctrl', 'tab')
-    # pyautogui.hotkey('ctrl', 'tab')
-    # pyautogui.hotkey('ctrl', 'tab')
-    # pyautogui.hotkey('ctrl', 'tab')
-    # pyautogui.hotkey('ctrl', 'tab')
-    # pyautogui.hotkey('ctrl', 'tab')
-    # pyautogui.hotkey('ctrl', 'tab')
-    # pyautogui.hotkey('ctrl', 'tab')
-    # pyautogui.hotkey('ctrl', 'tab')
-    # pyautogui.hotkey('ctrl', 'tab')
+pyautogui.write('0')
+pyautogui.write('5')
+pyautogui.write('3')
+pyautogui.write(str(random.randint(0, 9)))
 
-
-
-
-
-
-
-# Pressionar CTRL + V
-# pyautogui.hotkey('ctrl', 'v')
-
-# # Pressionar ENTER
-# pyautogui.press('enter')
-
-# # Pressionar ESC três vezes
-# for _ in range(6):
-#     pyautogui.press('backspace')
-
-# # Digitar 2130
-# pyautogui.write('0')
-# pyautogui.write('0')
-# pyautogui.write('3')
-# pyautogui.write(str(random.randint(0, 9)))
-
-# # Pressionar ENTER
-# pyautogui.press('enter')
+# Pressionar ENTER
+pyautogui.press('enter')
