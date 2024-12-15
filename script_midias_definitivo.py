@@ -4,6 +4,7 @@ import random
 import pyautogui
 import time
 
+###############################################################################################################
 # Aguardar 2 segundos antes de começar para dar tempo de colocar o foco na janela correta
 time.sleep(2)
 
@@ -13,22 +14,17 @@ pyautogui.hotkey('ctrl', 'o')
 num_tabs = 10
 
 for _ in range(num_tabs):
-    time.sleep(0.5)  # Pausa
+    time.sleep(0.4)  # Pausa
     pyautogui.press('tab')  # Pressiona 'Tab'
 
-
-time.sleep(0.5)
 pyautogui.press('right')
-time.sleep(0.5)
 pyautogui.press('left')
-time.sleep(0.5)
 pyautogui.press('enter')
-time.sleep(0.5)
 pyautogui.hotkey('ctrl', 'v')
-time.sleep(0.5)
+time.sleep(0.4)
 pyautogui.press('enter')
 
-# Pressionar ESC três vezes
+# Pressionar ESC várias vezes
 for _ in range(6):
     pyautogui.press('backspace')
 
@@ -38,5 +34,5 @@ pyautogui.write('5')
 pyautogui.write('3')
 pyautogui.write(str(random.randint(0, 9)))
 
-# Pressionar ENTER
 pyautogui.press('enter')
+###############################################################################################################
