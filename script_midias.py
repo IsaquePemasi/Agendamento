@@ -9,27 +9,14 @@ time.sleep(2)
 
 # Pressionar CTRL + V
 pyautogui.hotkey('ctrl', 'o')
-pyautogui.press('tab')
-time.sleep(0.1)
-pyautogui.press('tab')
-time.sleep(0.1)
-pyautogui.press('tab')
-time.sleep(0.1)
-pyautogui.press('tab')
-time.sleep(0.1)
-pyautogui.press('tab')
-time.sleep(0.1)
-pyautogui.press('tab')
-time.sleep(0.1)
-pyautogui.press('tab')
-time.sleep(0.1)
-pyautogui.press('tab')
-time.sleep(0.1)
-pyautogui.press('tab')
-time.sleep(0.1)
-pyautogui.press('tab')
-time.sleep(0.1)
-pyautogui.press('tab')
+# Número de vezes que você deseja pressionar 'Tab'
+num_tabs = 10
+
+for _ in range(num_tabs):
+    time.sleep(0.5)  # Pausa
+    pyautogui.press('tab')  # Pressiona 'Tab'
+
+
 time.sleep(0.1)
 pyautogui.press('right')
 time.sleep(0.1)
