@@ -4,7 +4,7 @@ import random
 import pyautogui
 import time
 
-tempo_de_espera = 0.5  
+tempo_de_espera = 0.2  
 
 # Aguardar 2 segundos antes de começar para dar tempo de colocar o foco na janela correta
 time.sleep(2)
@@ -17,7 +17,7 @@ pyautogui.press('enter')
 time.sleep(tempo_de_espera)
 # Pressionar tab
 pyautogui.press('tab')
-time.sleep(3)
+time.sleep(2)
 # Simula um clique na posição atual do mouse
 pyautogui.click()
 
