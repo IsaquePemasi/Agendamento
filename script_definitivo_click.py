@@ -4,7 +4,8 @@ import random
 import pyautogui
 import time
 
-tempo
+tempo_de_espera = 0.5  
+
 # Aguardar 2 segundos antes de começar para dar tempo de colocar o foco na janela correta
 time.sleep(2)
 
@@ -13,7 +14,7 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
 # Pressionar tab
 pyautogui.press('tab')
 time.sleep(3)
@@ -39,7 +40,7 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -62,7 +63,7 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -86,7 +87,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -109,7 +111,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -132,7 +135,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -155,7 +159,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -178,7 +183,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -201,7 +207,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -224,7 +231,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -247,7 +255,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -270,7 +279,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -293,7 +303,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -316,7 +327,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -339,7 +351,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -362,7 +375,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -385,7 +399,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -408,7 +423,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -431,7 +447,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -454,7 +471,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -477,7 +495,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -500,7 +519,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -523,7 +543,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -546,7 +567,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -569,7 +591,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -592,7 +615,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -615,7 +639,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -638,7 +663,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -661,7 +687,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -684,7 +711,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -707,7 +735,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -730,7 +759,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -753,7 +783,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -776,7 +807,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -799,7 +831,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -822,7 +855,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -845,7 +879,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -868,7 +903,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -891,7 +927,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -914,7 +951,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -937,7 +975,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -960,7 +999,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -983,7 +1023,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -1006,7 +1047,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -1029,7 +1071,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -1052,7 +1095,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -1076,7 +1120,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
@@ -1099,7 +1144,8 @@ pyautogui.hotkey('ctrl', 'v')
 
 # Pressionar ENTER
 pyautogui.press('enter')
-time.sleep(1)
+time.sleep(tempo_de_espera)
+
 # Pressionar tab
 pyautogui.press('tab')
 # Simula um clique na posição atual do mouse
