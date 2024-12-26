@@ -1,13 +1,18 @@
+import time
 import pyautogui
+
 num_tabs = 10
+tempo = 2
+
+time.sleep(2) 
 
 #vai até a postagem
 for _ in range(4):
     pyautogui.press('tab')
-
 # Pressionar ENTER
 pyautogui.press('enter')
 
+time.sleep(tempo) 
 # Pressionar CTRL + V
 pyautogui.hotkey('ctrl', 'v')
 
