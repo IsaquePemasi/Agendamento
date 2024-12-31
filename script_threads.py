@@ -4,6 +4,12 @@ import pyautogui
 num_tabs = 10
 tempo = 2
 
+# Defina o texto que você quer colar
+texto_para_colar = "Seu texto aqui"
+
+# Copia o texto para o clipboard
+pyperclip.copy(texto_para_colar)
+
 time.sleep(2) 
 
 #vai até a postagem
