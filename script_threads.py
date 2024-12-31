@@ -1,5 +1,6 @@
 import time
 import pyautogui
+import pyperclip
 
 num_tabs = 10
 tempo = 2
