@@ -1,6 +1,7 @@
 import time
 import pyautogui
 import pyperclip
+from datetime import datetime
 
 num_tabs = 11
 tempo1 = 1
@@ -8,7 +9,7 @@ tempo2 = 2
 tempo_final = 20
 n=1
 x = n + 1
-mensagem = f"Imagem {n} postada"
+hora_atual = datetime.now().time()
 
 # Defina o texto que você quer colar
 texto_para_colar1 = "Mencionou você há 2 minutos\nNossa, não custa nada me dar um oi né?! 🥲"
@@ -63,6 +64,7 @@ texto_para_colar49 = "❤️Se você me ama me deixa saber ❤️🥺"
 texto_para_colar50 = "Te curti 15 vezes e você nem tem coragem de apertar um coração ❤️"
 # texto_para_colar51 = "Mulher de 40 e velha! Eu sendo velha aos 40 🤭🤭🤭"
 #01############################################################################
+print("Começou às: ", hora_atual)
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar1)
 
@@ -108,7 +110,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("1 imagem postada!")
 #02############################################################################
 # Copia o texto para o clipboard
@@ -157,6 +159,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
+print("O post foi publicado às: ", hora_atual)
 print("2 imagens postadas!")
 #03############################################################################
 # Copia o texto para o clipboard
@@ -205,7 +208,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("3 imagens postadas!")
 #04############################################################################
 # Copia o texto para o clipboard
@@ -254,7 +257,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("4 imagens postadas!")
 #05############################################################################
 # Copia o texto para o clipboard
@@ -303,7 +306,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("5 imagens postadas!")
 #06############################################################################
 # Copia o texto para o clipboard
@@ -352,7 +355,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("6 imagens postadas!")
 #07############################################################################
 # Copia o texto para o clipboard
@@ -401,7 +404,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("7 imagens postadas!")
 #08############################################################################
 # Copia o texto para o clipboard
@@ -450,7 +453,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("8 imagens postadas!")
 #09############################################################################
 # Copia o texto para o clipboard
@@ -499,7 +502,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("9 imagens postadas!")
 #10##########################################################################
 # Copia o texto para o clipboard
@@ -548,7 +551,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("10 imagens postadas!")
 #11##########################################################################
 # Copia o texto para o clipboard
@@ -597,7 +600,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("11 imagens postadas!")
 #12##########################################################################
 # Copia o texto para o clipboard
@@ -646,7 +649,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("12 imagens postadas!")
 #13##########################################################################
 # Copia o texto para o clipboard
@@ -695,7 +698,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("13 imagens postadas!")
 #14############################################################################
 # Copia o texto para o clipboard
@@ -744,7 +747,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("14 imagens postadas!")
 #15##########################################################################
 # Copia o texto para o clipboard
@@ -793,7 +796,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("15 imagens postadas!")
 #16##########################################################################
 # Copia o texto para o clipboard
@@ -842,7 +845,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("16 imagens postadas!")
 #17##########################################################################
 # Copia o texto para o clipboard
@@ -891,7 +894,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("17 imagens postadas!")
 #18##########################################################################
 # Copia o texto para o clipboard
@@ -940,7 +943,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("18 imagens postadas!")
 #19##########################################################################
 # Copia o texto para o clipboard
@@ -989,7 +992,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("19 imagens postadas!")
 #20##########################################################################
 # Copia o texto para o clipboard
@@ -1038,7 +1041,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("20 imagens postadas!")
 #21##########################################################################
 # Copia o texto para o clipboard
@@ -1087,7 +1090,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("21 imagens postadas!")
 #22##########################################################################
 # Copia o texto para o clipboard
@@ -1136,7 +1139,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("22 imagens postadas!")
 #23##########################################################################
 # Copia o texto para o clipboard
@@ -1185,7 +1188,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("23 imagens postadas!")
 #24###########################################################################
 # Copia o texto para o clipboard
@@ -1234,7 +1237,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("24 imagens postadas!")
 #25#########################################################################
 # Copia o texto para o clipboard
@@ -1283,7 +1286,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("25 imagens postadas!")
 #26##########################################################################
 # Copia o texto para o clipboard
@@ -1332,7 +1335,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("26 imagens postadas!")
 #27##########################################################################
 # Copia o texto para o clipboard
@@ -1381,7 +1384,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("27 imagens postadas!")
 #28##########################################################################
 # Copia o texto para o clipboard
@@ -1431,7 +1434,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("28 imagens postadas!")
 #29##########################################################################
 # Copia o texto para o clipboard
@@ -1480,7 +1483,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("29 imagens postadas!")
 #30##########################################################################
 # Copia o texto para o clipboard
@@ -1530,7 +1533,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("30 imagens postadas!")
 #31##########################################################################
 # Copia o texto para o clipboard
@@ -1580,7 +1583,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("31 imagens postadas!")
 
 #32##########################################################################
@@ -1631,7 +1634,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("32 imagens postadas!")
 
 #33##########################################################################
@@ -1682,7 +1685,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("33 imagens postadas!")
 
 #34###########################################################################
@@ -1733,7 +1736,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("34 imagens postadas!")
 
 #35##########################################################################
@@ -1784,7 +1787,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("35 imagens postadas!")
 
 #36##########################################################################
@@ -1835,7 +1838,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("36 imagens postadas!")
 
 #37##########################################################################
@@ -1886,7 +1889,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("37 imagens postadas!")
 
 #38##########################################################################
@@ -1937,7 +1940,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("38 imagens postadas!")
 
 #39##########################################################################
@@ -1988,7 +1991,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("39 imagens postadas!")
 
 #40##########################################################################
@@ -2039,7 +2042,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("40 imagens postadas!")
 
 #41##########################################################################
@@ -2090,7 +2093,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("41 imagens postadas!")
 
 #42##########################################################################
@@ -2141,7 +2144,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("42 imagens postadas!")
 
 #43#########################################################################
@@ -2192,7 +2195,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("43 imagens postadas!")
 
 #44##########################################################################
@@ -2243,7 +2246,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("44 imagens postadas!")
 
 #45##########################################################################
@@ -2294,7 +2297,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("45 imagens postadas!")
 
 #46##########################################################################
@@ -2345,7 +2348,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("46 imagens postadas!")
 
 #47##########################################################################
@@ -2396,7 +2399,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("47 imagens postadas!")
 
 #48##########################################################################
@@ -2447,7 +2450,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("48 imagens postadas!")
 
 #49##########################################################################
@@ -2498,7 +2501,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("49 imagens postadas!")
 
 #50##########################################################################
@@ -2548,7 +2551,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-
+print("O post foi publicado às: ", hora_atual)
 print("50 imagens postadas!")
 
 #############################################################################
