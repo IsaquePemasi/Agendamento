@@ -7,6 +7,7 @@ tempo1 = 1
 tempo2 = 2
 tempo_final = 20
 n=1
+x = n + 1
 mensagem = f"Imagem {n} postada"
 
 # Defina o texto que você quer colar
@@ -86,7 +87,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -108,7 +109,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("1 imagem postada!")
 #02############################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar2)
@@ -130,7 +131,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -156,9 +157,7 @@ pyautogui.press('enter')
 time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
-print(" imagem {n} postada!")
-
-print(mensagem)
+print("2 imagens postadas!")
 #03############################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar3)
@@ -180,7 +179,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -207,7 +206,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("3 imagens postadas!")
 #04############################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar4)
@@ -229,7 +228,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -256,7 +255,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("4 imagens postadas!")
 #05############################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar5)
@@ -278,7 +277,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -305,7 +304,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("5 imagens postadas!")
 #06############################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar6)
@@ -327,7 +326,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -354,7 +353,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("6 imagens postadas!")
 #07############################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar7)
@@ -376,7 +375,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -403,7 +402,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("7 imagens postadas!")
 #08############################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar8)
@@ -425,7 +424,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -452,7 +451,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("8 imagens postadas!")
 #09############################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar9)
@@ -474,7 +473,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -501,7 +500,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("9 imagens postadas!")
 #10##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar10)
@@ -523,7 +522,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -550,7 +549,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("10 imagens postadas!")
 #11##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar11)
@@ -572,7 +571,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -599,7 +598,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("11 imagens postadas!")
 #12##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar12)
@@ -621,7 +620,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -648,7 +647,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("12 imagens postadas!")
 #13##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar13)
@@ -670,7 +669,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -697,8 +696,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
-#1############################################################################
+print("13 imagens postadas!")
+#14############################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar14)
 n = n + 1
@@ -719,7 +718,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia..")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -746,7 +745,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("14 imagens postadas!")
 #15##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar15)
@@ -768,7 +767,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -795,7 +794,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("15 imagens postadas!")
 #16##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar16)
@@ -817,7 +816,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -844,7 +843,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("16 imagens postadas!")
 #17##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar17)
@@ -866,7 +865,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -893,7 +892,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("17 imagens postadas!")
 #18##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar18)
@@ -915,7 +914,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -942,7 +941,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("18 imagens postadas!")
 #19##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar19)
@@ -964,7 +963,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -991,7 +990,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("19 imagens postadas!")
 #20##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar20)
@@ -1013,7 +1012,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1040,7 +1039,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("20 imagens postadas!")
 #21##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar21)
@@ -1062,7 +1061,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1089,7 +1088,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("21 imagens postadas!")
 #22##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar22)
@@ -1111,7 +1110,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1138,7 +1137,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("22 imagens postadas!")
 #23##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar23)
@@ -1160,7 +1159,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1187,7 +1186,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("23 imagens postadas!")
 #24###########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar24)
@@ -1209,7 +1208,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1236,7 +1235,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("24 imagens postadas!")
 #25#########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar25)
@@ -1258,7 +1257,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1285,7 +1284,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("25 imagens postadas!")
 #26##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar26)
@@ -1307,7 +1306,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1334,7 +1333,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("26 imagens postadas!")
 #27##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar27)
@@ -1356,7 +1355,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1383,7 +1382,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("27 imagens postadas!")
 #28##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar28)
@@ -1405,7 +1404,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1432,7 +1432,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("28 imagens postadas!")
 #29##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar29)
@@ -1454,7 +1454,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1481,7 +1481,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("29 imagens postadas!")
 #30##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar30)
@@ -1503,7 +1503,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1530,7 +1531,7 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("30 imagens postadas!")
 #31##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar31)
@@ -1552,7 +1553,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1579,7 +1581,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("31 imagens postadas!")
+
 #32##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar32)
@@ -1601,7 +1604,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1628,7 +1632,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("32 imagens postadas!")
+
 #33##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar33)
@@ -1650,7 +1655,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1677,7 +1683,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("33 imagens postadas!")
+
 #34###########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar34)
@@ -1699,7 +1706,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1726,7 +1734,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("34 imagens postadas!")
+
 #35##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar35)
@@ -1748,7 +1757,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1775,7 +1785,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("35 imagens postadas!")
+
 #36##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar36)
@@ -1797,7 +1808,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1824,7 +1836,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("36 imagens postadas!")
+
 #37##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar37)
@@ -1846,7 +1859,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1873,7 +1887,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("37 imagens postadas!")
+
 #38##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar38)
@@ -1895,7 +1910,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1922,7 +1938,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("38 imagens postadas!")
+
 #39##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar39)
@@ -1944,7 +1961,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -1971,7 +1989,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("39 imagens postadas!")
+
 #40##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar40)
@@ -1993,7 +2012,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -2020,7 +2040,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("40 imagens postadas!")
+
 #41##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar41)
@@ -2042,7 +2063,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -2069,7 +2091,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("41 imagens postadas!")
+
 #42##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar42)
@@ -2091,7 +2114,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -2118,7 +2142,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("42 imagens postadas!")
+
 #43#########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar43)
@@ -2140,7 +2165,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -2167,7 +2193,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("43 imagens postadas!")
+
 #44##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar44)
@@ -2189,7 +2216,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -2216,7 +2244,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("44 imagens postadas!")
+
 #45##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar45)
@@ -2238,7 +2267,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -2265,7 +2295,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("45 imagens postadas!")
+
 #46##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar46)
@@ -2287,7 +2318,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -2314,7 +2346,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("46 imagens postadas!")
+
 #47##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar47)
@@ -2336,7 +2369,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -2363,7 +2397,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("47 imagens postadas!")
+
 #48##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar48)
@@ -2385,7 +2420,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -2412,7 +2448,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("48 imagens postadas!")
+
 #49##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar49)
@@ -2434,7 +2471,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
+
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -2461,7 +2499,8 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("49 imagens postadas!")
+
 #50##########################################################################
 # Copia o texto para o clipboard
 pyperclip.copy(texto_para_colar50)
@@ -2483,7 +2522,7 @@ pyautogui.press('tab')
 pyautogui.press('enter')    
 time.sleep(tempo1)
 # Parte onde vai percorrer as imagens
-print("Selecionando a midia!")
+print("Selecionando a midia...")
 for _ in range(num_tabs):
     time.sleep(0.4) 
     pyautogui.press('tab') 
@@ -2510,5 +2549,6 @@ time.sleep(tempo1)
 time.sleep(tempo_final) 
 pyautogui.hotkey('ctrl', 'r')
 
-print(mensagem)
+print("50 imagens postadas!")
+
 #############################################################################
