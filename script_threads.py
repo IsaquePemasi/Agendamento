@@ -5,7 +5,7 @@ import pyperclip
 num_tabs = 11
 tempo1 = 1
 tempo2 = 2
-tempo_final = 20
+tempo_final = 16
 n=1
 x = n + 1
 mensagem = f"Imagem {n} postada"
