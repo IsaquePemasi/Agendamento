@@ -2,6 +2,13 @@ import pyautogui
 import time
 import subprocess
 import random
+xAgendamento = 1207  # Coordenada X desejada
+yAgendamento = 742  # Coordenada Y desejada
+xVoltar = 354
+yVoltar = 46
+tempo_minimo = 1
+xDia = 539
+yDia = 396
 ###################################################################################################
 def script_definitivo_click():
     tempo_de_espera = 0.2  
@@ -17,7 +24,9 @@ def script_definitivo_click():
     time.sleep(tempo_de_espera)
     # Pressionar tab
     pyautogui.press('tab')
-    time.sleep(2)
+    time.sleep(1)
+    # Move o mouse para a posição (x, y) na tela
+    pyautogui.moveTo(xDia, yDia)
     # Simula um clique na posição atual do mouse
     pyautogui.click()
 
@@ -1163,13 +1172,6 @@ def script_definitivo_click():
     # Pressionar ENTER
     pyautogui.press('enter')
 ###################################################################################################
-    
-    # Move o mouse para a posição (x, y) na tela
-xAgendamento = 1207  # Coordenada X desejada
-yAgendamento = 742  # Coordenada Y desejada
-xVoltar = 354
-yVoltar = 46
-tempo_minimo = 1
 # Faz o scroll para baixo X "cliques"
 # pyautogui.scroll(-1000)
 ###################################################################################################
@@ -1199,3 +1201,8 @@ pyautogui.moveTo(xVoltar, yVoltar)
 pyautogui.click()
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
+###################################################################################################
+# Scroll pos postagem 
+# Faz o scroll para baixo X "cliques"
+# pyautogui.scroll(-1000)
+###################################################################################################
