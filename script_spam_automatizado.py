@@ -12,3 +12,5 @@ x1 = 566  # Coordenada X desejada
 y1 = 213  # Coordenada Y desejada
 pyautogui.moveTo(x1, y1)
 
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
