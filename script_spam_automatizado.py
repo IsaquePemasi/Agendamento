@@ -1,5 +1,6 @@
 import pyautogui
 import time
+import subprocess
 
 # Move o mouse para a posição (x, y) na tela
 xAgendamento = 1207  # Coordenada X desejada
@@ -7,7 +8,7 @@ yAgendamento = 742  # Coordenada Y desejada
 
 # Faz o scroll para baixo X "cliques"
 # pyautogui.scroll(-1000)
-###############################################################################################################
+####################################################################################################
 # Espera 2 segundos
 time.sleep(2)
 
@@ -25,4 +26,5 @@ pyautogui.moveTo(xAgendamento, yAgendamento)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 
-# quero que execute o script_definitivo.py aqui
+# Executa o script_definitivo.py
+subprocess.run(["python", "script_definitivo_click.py"])
