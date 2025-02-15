@@ -6,7 +6,7 @@ from datetime import datetime
 num_tabs = 11
 tempo1 = 1
 tempo2 = 2
-tempo_final = 20
+tempo_final = 15
 n=1
 x = n + 1
 hora_atual = datetime.now()
