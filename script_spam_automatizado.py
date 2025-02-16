@@ -1192,7 +1192,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-script_definitivo_click()
+# script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
@@ -1204,5 +1204,5 @@ pyautogui.click()
 ###################################################################################################
 # Scroll pos postagem 
 # Faz o scroll para baixo X "cliques"
-# pyautogui.scroll(-1000)
+pyautogui.scroll(-1000)
 ###################################################################################################
