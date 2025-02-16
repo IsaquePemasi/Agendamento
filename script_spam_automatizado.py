@@ -9,6 +9,11 @@ yVoltar = 46
 tempo_minimo = 1
 xDia = 539
 yDia = 396
+# Obtenha a largura e a altura da tela
+largura_tela, altura_tela = pyautogui.size()
+# Calcule as coordenadas do ponto central
+x_central = largura_tela / 2
+y_central = altura_tela / 2
 ###################################################################################################
 def script_definitivo_click():
     tempo_de_espera = 0.2  
@@ -1202,7 +1207,8 @@ pyautogui.click()
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 ###################################################################################################
-# Scroll pos postagem 
+# Mova o ponteiro do mouse para o ponto central
+pyautogui.moveTo(x_central, y_central)
 # Faz o scroll para baixo X "cliques"
 pyautogui.scroll(-1000)
 ###################################################################################################
