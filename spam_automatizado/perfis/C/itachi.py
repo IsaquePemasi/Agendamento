@@ -15,10 +15,11 @@ yDia = 396
 x_central = 1072
 y_central = 351
 ###################################################################################################
-def script_definitivo_click():
+def script_definitivo_click(): 
+
     tempo_de_espera = 0.2  
 
-    # Aguardar 2 segundos antes de começar para dar tempo de colocar o foco na janela correta
+# Aguardar 2 segundos antes de começar para dar tempo de colocar o foco na janela correta
     time.sleep(2)
 
     # Pressionar CTRL + V
@@ -42,7 +43,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('0')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
 
     # Pressionar ENTER
@@ -66,7 +67,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('0')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
 
     # Pressionar ENTER
@@ -90,7 +91,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('1')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
 
     # Pressionar ENTER
@@ -114,7 +115,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('1')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
 
     # Pressionar ENTER
@@ -138,7 +139,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('2')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
 
     # Pressionar ENTER
@@ -162,7 +163,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('2')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
 
     # Pressionar ENTER
@@ -186,7 +187,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('3')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
 
     # Pressionar ENTER
@@ -210,7 +211,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('3')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
 
     # Pressionar ENTER
@@ -234,7 +235,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('4')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -258,7 +259,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('4')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -282,7 +283,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('5')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -306,7 +307,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('5')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -330,7 +331,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('6')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -354,7 +355,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('6')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -378,7 +379,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('7')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -402,7 +403,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('7')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -426,7 +427,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('8')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -450,7 +451,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('8')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -474,7 +475,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('9')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -498,7 +499,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('0')
     pyautogui.write('9')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -522,7 +523,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('0')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -546,7 +547,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('0')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -570,7 +571,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('1')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -594,7 +595,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('1')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -618,7 +619,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('2')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -642,7 +643,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('2')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -666,7 +667,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('3')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -690,7 +691,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('3')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -714,7 +715,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('4')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -738,7 +739,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('4')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -762,7 +763,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('5')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -786,7 +787,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('5')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -810,7 +811,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('6')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -834,7 +835,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('6')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -858,7 +859,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('7')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -882,7 +883,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('7')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -906,7 +907,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('8')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -930,7 +931,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('8')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -954,7 +955,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('9')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -978,7 +979,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('1')
     pyautogui.write('9')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -1002,7 +1003,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('2')
     pyautogui.write('0')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -1026,7 +1027,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('2')
     pyautogui.write('0')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -1050,7 +1051,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('2')
     pyautogui.write('1')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -1074,7 +1075,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('2')
     pyautogui.write('1')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -1098,7 +1099,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('2')
     pyautogui.write('2')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -1122,7 +1123,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('2')
     pyautogui.write('2')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -1147,7 +1148,7 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('2')
     pyautogui.write('3')
-    pyautogui.write('0')
+    pyautogui.write('2')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
@@ -1171,12 +1172,12 @@ def script_definitivo_click():
     # Digitar 2130
     pyautogui.write('2')
     pyautogui.write('3')
-    pyautogui.write('3')
+    pyautogui.write('5')
     pyautogui.write(str(random.randint(0, 9)))
         
     # Pressionar ENTER
     pyautogui.press('enter')
-###################################################################################################
+######################################################### 
 # Espera 2 segundos
 time.sleep(3)
 # Move o mouse para a posição (x, y) na tela
