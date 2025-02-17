@@ -1195,7 +1195,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-# script_definitivo_click()
+script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
@@ -1229,7 +1229,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-# script_definitivo_click()
+script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
@@ -1263,7 +1263,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-# script_definitivo_click()
+script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
@@ -1297,7 +1297,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-# script_definitivo_click()
+script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
@@ -1331,7 +1331,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-# script_definitivo_click()
+script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
@@ -1365,7 +1365,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-# script_definitivo_click()
+script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
@@ -1399,7 +1399,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-# script_definitivo_click()
+script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
@@ -1433,7 +1433,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-# script_definitivo_click()
+script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
@@ -1467,7 +1467,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-# script_definitivo_click()
+script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
@@ -1501,7 +1501,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-# script_definitivo_click()
+script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
@@ -1535,7 +1535,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-# script_definitivo_click()
+script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
@@ -1569,7 +1569,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-# script_definitivo_click()
+script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
@@ -1603,7 +1603,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-# script_definitivo_click()
+script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
@@ -1637,7 +1637,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-# script_definitivo_click()
+script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
@@ -1671,7 +1671,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-# script_definitivo_click()
+script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
@@ -1705,7 +1705,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Executa a função script_definitivo_click
-# script_definitivo_click()
+script_definitivo_click()
 # Espera o tempo minimo
 time.sleep(tempo_minimo)
 # Move o mouse para a posição (x, y) na tela
