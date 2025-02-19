@@ -10,8 +10,8 @@ xVoltar = 162
 yVoltar = 50
 tempo_minimo = 1 #1 #3 esta funcionando
 tempo_medio = 1 #2.5 #3 esta funcionando
-xDia = 682
-yDia = 394
+xDia = 730
+yDia = 392
 x_central = 1072
 y_central = 351
 ###################################################################################################

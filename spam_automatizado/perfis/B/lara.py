@@ -10,8 +10,8 @@ xVoltar = 162
 yVoltar = 50
 tempo_minimo = 1 #1 #3 esta funcionando
 tempo_medio = 1 #2.5 #3 esta funcionando
-xDia = 682
-yDia = 394
+xDia = 730
+yDia = 392
 x_central = 1072
 y_central = 351
 ###################################################################################################
@@ -1214,7 +1214,7 @@ pyautogui.click()
 pyautogui.scroll(-150)
 ###################################################################################################
 # Espera 2 segundos
-time.sleep(2)
+time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 x2 = 322  # Coordenada X desejada
 y2 = 229  # Coordenada Y desejada
@@ -1248,7 +1248,7 @@ pyautogui.click()
 pyautogui.scroll(-250)
 # ###################################################################################################
 # Espera 2 segundos
-time.sleep(2)
+time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 x3 = 316  # Coordenada X desejada
 y3 = 261  # Coordenada Y desejada
@@ -1282,7 +1282,7 @@ pyautogui.click()
 pyautogui.scroll(-150)
 ###################################################################################################
 # Espera 2 segundo
-time.sleep(2)
+time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 x4 = 348  # Coordenada X desejada
 y4 = 345  # Coordenada Y desejada
@@ -1317,7 +1317,7 @@ pyautogui.click()
 pyautogui.scroll(-150)
 ###################################################################################################
 # Espera 2 segundo
-time.sleep(2)
+time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 x5 = 330  # Coordenada X desejada
 y5 = 335  # Coordenada Y desejada
@@ -1352,7 +1352,7 @@ pyautogui.click()
 pyautogui.scroll(-150)
 ###################################################################################################
 # Espera 2 segundo
-time.sleep(2)
+time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 x6 = 362  # Coordenada X desejada
 y6 = 466  # Coordenada Y desejada
@@ -1387,7 +1387,7 @@ pyautogui.click()
 pyautogui.scroll(-150)
 ###################################################################################################
 # Espera 2 segundo
-time.sleep(2)
+time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 x7 = 409  # Coordenada X desejada
 y7 = 520  # Coordenada Y desejada
@@ -1422,7 +1422,7 @@ pyautogui.click()
 pyautogui.scroll(-250)
 ###################################################################################################
 # Espera 2 segundo
-time.sleep(2)
+time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 x8 = 289  # Coordenada X desejada
 y8 = 548  # Coordenada Y desejada
@@ -1457,7 +1457,7 @@ pyautogui.click()
 pyautogui.scroll(-350)
 ###################################################################################################
 # Espera 2 segundo
-time.sleep(2)
+time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 x9 = 376  # Coordenada X desejada
 y9 = 500  # Coordenada Y desejada
@@ -1492,7 +1492,7 @@ pyautogui.click()
 pyautogui.scroll(-350)
 ###################################################################################################
 # Espera 2 segundo
-time.sleep(2)
+time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 x10 = 349  # Coordenada X desejada
 y10 = 470  # Coordenada Y desejada
@@ -1527,7 +1527,7 @@ pyautogui.click()
 pyautogui.scroll(-350)
 ###################################################################################################
 # Espera 2 segundo
-time.sleep(2)
+time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 x11 = 386  # Coordenada X desejada
 y11 = 417  # Coordenada Y desejada
@@ -1561,7 +1561,7 @@ pyautogui.click()
 pyautogui.scroll(-350)
 ###################################################################################################
 # Espera 2 segundo
-time.sleep(2)
+time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 x12 = 301  # Coordenada X desejada
 y12 = 375  # Coordenada Y desejada
@@ -1596,7 +1596,7 @@ pyautogui.click()
 pyautogui.scroll(-350)
 ###################################################################################################
 # Espera 2 segundo
-time.sleep(2)
+time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 x13 = 325  # Coordenada X desejada
 y13 = 313  # Coordenada Y desejada
@@ -1630,7 +1630,7 @@ pyautogui.click()
 pyautogui.scroll(-350)
 ###################################################################################################
 # Espera 2 segundo
-time.sleep(2)
+time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 x14 = 331  # Coordenada X desejada
 y14 = 410  # Coordenada Y desejada
@@ -1664,7 +1664,7 @@ pyautogui.click()
 pyautogui.scroll(-350)
 ###################################################################################################
 # Espera 2 segundo
-time.sleep(2)
+time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 x15 = 339  # Coordenada X desejada
 y15 = 581  # Coordenada Y desejada
@@ -1698,7 +1698,7 @@ pyautogui.click()
 pyautogui.scroll(-350)
 ###################################################################################################
 # Espera 2 segundo
-time.sleep(2)
+time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 x16 = 312  # Coordenada X desejada
 y16 = 667  # Coordenada Y desejada
