@@ -19,7 +19,7 @@ def script_definitivo_click():
     tempo_de_espera = 0.2  
 
     # Aguardar 2 segundos antes de começar para dar tempo de colocar o foco na janela correta
-    time.sleep(2)
+    time.sleep(1)
 
     # Pressionar CTRL + V
     pyautogui.hotkey('ctrl', 'v')
@@ -1180,7 +1180,7 @@ def script_definitivo_click():
 ########################################################
 ###############################################################
 # Espera 2 segundos
-time.sleep(3)
+time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 x1 = 310  # Coordenada X desejada
 y1 = 156  # Coordenada Y desejada
@@ -1491,7 +1491,7 @@ time.sleep(1)
 x10 = 349  # Coordenada X desejada
 y10 = 470  # Coordenada Y desejada
 pyautogui.moveTo(x10, y10, duration = 1)
-time.sleep(5)
+time.sleep(1)
 # Realiza um clique na posição atual do mouse
 # pyautogui.click()
 # # Espera o tempo minimo
@@ -1560,7 +1560,7 @@ time.sleep(1)
 x12 = 301  # Coordenada X desejada
 y12 = 375  # Coordenada Y desejada
 pyautogui.moveTo(x12, y12, duration = 1)
-time.sleep(5)
+time.sleep(1)
 # Realiza um clique na posição atual do mouse
 # pyautogui.click()
 # # Espera o tempo minimo

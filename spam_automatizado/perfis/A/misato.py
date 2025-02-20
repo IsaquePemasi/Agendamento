@@ -19,7 +19,7 @@ def script_definitivo_click():
     tempo_de_espera = 0.2  
 
     # Aguardar 2 segundos antes de começar para dar tempo de colocar o foco na janela correta
-    time.sleep(2)
+    time.sleep(1)
 
     # Pressionar CTRL + V
     pyautogui.hotkey('ctrl', 'v')
