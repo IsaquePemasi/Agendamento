@@ -10,8 +10,8 @@ xVoltar = 242
 yVoltar = 72
 tempo_minimo = 1 #1
 tempo_medio = 1 #2.5
-xxDia = 1104
-yDia = 555
+xDia = 1177
+yDia = 553
 x_central = 1072
 y_central = 351
 ###################################################################################################
@@ -1591,8 +1591,8 @@ pyautogui.scroll(-350)
 # Espera 2 segundo
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-x13 = 409  # Coordenada X desejada
-y13 = 417  # Coordenada Y desejada
+x13 = 463  # Coordenada X desejada
+y13 = 416  # Coordenada Y desejada
 pyautogui.moveTo(x13, y13, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
