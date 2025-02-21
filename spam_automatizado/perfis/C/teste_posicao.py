@@ -52,7 +52,7 @@ y16 = 619  # Coordenada Y desejada
 # Espera 2 segundos
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(x1, y1, duration = 1)
+time.sleep(3)
 # Realiza um clique na posição atual do mouse
 # Obtém a posição atual do mouse
 x, y = pyautogui.position()
@@ -69,7 +69,7 @@ pyautogui.scroll(-150)
 # Espera 2 segundos
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(x2, y2, duration = 1)
+time.sleep(3)
 # Realiza um clique na posição atual do mouse
 # Obtém a posição atual do mouse
 x, y = pyautogui.position()
@@ -86,7 +86,7 @@ pyautogui.scroll(-250)
 # Espera 2 segundos
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(x3, y3, duration = 1)
+time.sleep(3)
 # Realiza um clique na posição atual do mouse
 # Obtém a posição atual do mouse
 x, y = pyautogui.position()
@@ -103,7 +103,7 @@ pyautogui.scroll(-150)
 # Espera 2 segundo
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(x4, y4, duration = 1)
+time.sleep(3)
 # Realiza um clique na posição atual do mouse
 # Obtém a posição atual do mouse
 x, y = pyautogui.position()
@@ -120,7 +120,7 @@ pyautogui.scroll(-150)
 # Espera 2 segundo
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(x5, y5, duration = 1)
+time.sleep(3)
 # Realiza um clique na posição atual do mouse
 # Obtém a posição atual do mouse
 x, y = pyautogui.position()
@@ -137,7 +137,7 @@ pyautogui.scroll(-150)
 # Espera 2 segundo
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(x6, y6, duration = 1)
+time.sleep(3)
 # Realiza um clique na posição atual do mouse
 # Obtém a posição atual do mouse
 x, y = pyautogui.position()
@@ -154,7 +154,7 @@ pyautogui.scroll(-150)
 # Espera 2 segundo
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(x7, y7, duration = 1)
+time.sleep(3)
 # Realiza um clique na posição atual do mouse
 # Obtém a posição atual do mouse
 x, y = pyautogui.position()
@@ -171,7 +171,7 @@ pyautogui.scroll(-250)
 # Espera 2 segundo
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(x8, y8, duration = 1)
+time.sleep(3)
 # Realiza um clique na posição atual do mouse
 # Obtém a posição atual do mouse
 x, y = pyautogui.position()
@@ -188,7 +188,7 @@ pyautogui.scroll(-350)
 # Espera 2 segundo
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(x9, y9, duration = 1)
+time.sleep(3)
 # Realiza um clique na posição atual do mouse
 # Obtém a posição atual do mouse
 x, y = pyautogui.position()
@@ -205,7 +205,7 @@ pyautogui.scroll(-350)
 # Espera 2 segundo
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(x10, y10, duration = 1)
+time.sleep(3)
 # Realiza um clique na posição atual do mouse
 # Obtém a posição atual do mouse
 x, y = pyautogui.position()
@@ -222,7 +222,7 @@ pyautogui.scroll(-350)
 # Espera 2 segundo
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(x11, y11, duration = 1)
+time.sleep(3)
 # Realiza um clique na posição atual do mouse
 # Obtém a posição atual do mouse
 x, y = pyautogui.position()
@@ -239,7 +239,7 @@ pyautogui.scroll(-350)
 # Espera 2 segundo
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(x12, y12, duration = 1)
+time.sleep(3)
 # Obtém a posição atual do mouse
 x, y = pyautogui.position()
 print(f"A posição atual do mouse é: ({x}, {y})")
@@ -255,24 +255,7 @@ pyautogui.scroll(-350)
 # Espera 2 segundo
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(x13, y13, duration = 1)
-# Realiza um clique na posição atual do mouse
-# Obtém a posição atual do mouse
-x, y = pyautogui.position()
-print(f"A posição atual do mouse é: ({x}, {y})")
-time.sleep(1)
-###################################################################################################
-# Mova o ponteiro do mouse para o ponto central
-pyautogui.moveTo(x_central, y_central, duration = 1)
-# Realiza um clique na posição atual do mouse
-pyautogui.click()
-# Faz o scroll para baixo X "cliques"
-pyautogui.scroll(-350)
-###################################################################################################
-# Espera 2 segundo
-time.sleep(1)
-# Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(x14, y14, duration = 1)
+time.sleep(3)
 # Realiza um clique na posição atual do mouse
 # Obtém a posição atual do mouse
 x, y = pyautogui.position()
@@ -289,7 +272,7 @@ pyautogui.scroll(-350)
 # Espera 2 segundo
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(x15, y15, duration = 1)
+time.sleep(3)
 # Realiza um clique na posição atual do mouse
 # Obtém a posição atual do mouse
 x, y = pyautogui.position()
@@ -306,7 +289,24 @@ pyautogui.scroll(-350)
 # Espera 2 segundo
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(x16, y16, duration = 1)
+time.sleep(3)
+# Realiza um clique na posição atual do mouse
+# Obtém a posição atual do mouse
+x, y = pyautogui.position()
+print(f"A posição atual do mouse é: ({x}, {y})")
+time.sleep(1)
+###################################################################################################
+# Mova o ponteiro do mouse para o ponto central
+pyautogui.moveTo(x_central, y_central, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Faz o scroll para baixo X "cliques"
+pyautogui.scroll(-350)
+###################################################################################################
+# Espera 2 segundo
+time.sleep(1)
+# Move o mouse para a posição (x, y) na tela
+time.sleep(3)
 # Realiza um clique na posição atual do mouse
 # Obtém a posição atual do mouse
 x, y = pyautogui.position()
