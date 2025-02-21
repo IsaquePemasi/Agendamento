@@ -1212,8 +1212,8 @@ pyautogui.scroll(-250)
 # Espera 2 segundos
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
-x3 = 495  # Coordenada X desejada
-y3 = 409  # Coordenada Y desejada
+x3 = 447  # Coordenada X desejada
+y3 = 329  # Coordenada Y desejada
 pyautogui.moveTo(x3, y3, duration = 1)
 time.sleep(1)
 ###################################################################################################
