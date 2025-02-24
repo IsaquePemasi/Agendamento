@@ -17,9 +17,8 @@ pyautogui.press('enter')
 time.sleep(tempo_de_espera)
 # Pressionar tab
 pyautogui.press('tab')
-time.sleep(1)
-# Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(xDia, yDia, duration = 1)
+time.sleep(2)
+
 # Simula um clique na posição atual do mouse
 pyautogui.click()
 
