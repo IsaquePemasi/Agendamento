@@ -6,8 +6,6 @@ def main():
         # Pergunta quantas vezes o usuário quer clicar
         num_clicks = int(input("Quantas vezes você quer que o botão esquerdo do mouse clique? "))
         
-        print("Clique em ALT + TAB e deixe o mouse em cima do botão 'Permitir Entrada'...")
-        time.sleep(3)
         # Espera 3 segundos
         print("Esperando 3 segundos...")
         time.sleep(3)
