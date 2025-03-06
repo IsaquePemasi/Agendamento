@@ -80,7 +80,7 @@ def create_button(frame, character, row, col):
     character_frame = tk.Frame(frame, padx=10, pady=10, bg='#f0f0f0')
     if os.path.exists(image_path):
         image = Image.open(image_path)
-        image = image.resize((335, 335), Image.Resampling.LANCZOS)  # Alterado para 150x150 pixels
+        image = image.resize((227, 227), Image.Resampling.LANCZOS)  # Alterado para 150x150 pixels
         photo = ImageTk.PhotoImage(image)
         button = tk.Button(character_frame, image=photo, command=lambda: run_script(character), bg='#f0f0f0', bd=0)
         button.image = photo  # Manter referência da imagem para evitar garbage collection
