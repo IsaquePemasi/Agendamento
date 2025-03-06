@@ -3,6 +3,7 @@ from tkinter import messagebox
 from PIL import Image, ImageTk
 import subprocess
 import os
+import pyautogui
 
 # Caminho base comum
 base_path = r"C:\Users\a925216\OneDrive - ATOS\Desktop\Agendamento\spam_automatizado\perfis\A"
@@ -46,6 +47,10 @@ character_scripts = {
 # Função para executar o script Python
 def run_script(character):
     script_path = character_scripts.get(character)
+    
+    # Simular Alt + Tab
+    pyautogui.hotkey('alt', 'tab')
+    
     if script_path and os.path.exists(script_path):
         try:
             subprocess.run(["python", script_path], check=True)
