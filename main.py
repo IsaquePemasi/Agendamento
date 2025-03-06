@@ -7,6 +7,7 @@ import os
 # Caminho base comum
 base_path = r"C:\Users\a925216\OneDrive - ATOS\Desktop\Agendamento\spam_automatizado\perfis\A"
 base_pathB = r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B"
+base_pathC = r""
 
 # Dicionário para mapear personagens aos seus scripts
 character_scripts = {
@@ -29,7 +30,16 @@ character_scripts = {
     "suporte": os.path.join(base_pathB, "suporte.py"),
     "winry": os.path.join(base_pathB, "winry.py"),
     "yoruichi": os.path.join(base_pathB, "yoruichi.py"),
-    "yuno": os.path.join(base_pathB, "yuno.py"),    
+    "ada": os.path.join(base_pathC, "ada.py"), 
+    "docinho": os.path.join(base_pathC, "docinho.py"),
+    "itachi": os.path.join(base_pathC, "itachi.py"),        
+    "jill": os.path.join(base_pathC, "jill.py"),
+    "light": os.path.join(base_pathC, "light.py"),
+    "mikasa": os.path.join(base_pathC, "mikasa.py"),
+    "misa": os.path.join(base_pathC, "misa.py"),
+    "sailor": os.path.join(base_pathC, "sailor.py"),
+    "spike": os.path.join(base_pathC, "spike.py"),
+    "temari": os.path.join(base_pathC, "temari.py"), 
 }
 
 # Função para executar o script Python
