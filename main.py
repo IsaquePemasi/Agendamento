@@ -32,19 +32,26 @@ def run_script(character):
     else:
         messagebox.showerror("Error", f"Script for {character} not found.")
 
-# Função para criar botões com imagens
+# Função para criar botões com imagens e textos
 def create_button(frame, character):
     image_path = os.path.join("images", f"{character}.png")
+    print(f"Trying to load image from: {image_path}")  # Adiciona depuração
+    character_frame = tk.Frame(frame)
     if os.path.exists(image_path):
         image = Image.open(image_path)
-        image = image.resize((100, 100), Image.ANTIALIAS)
+        image = image.resize((100, 100), Image.Resampling.LANCZOS)
         photo = ImageTk.PhotoImage(image)
-        button = tk.Button(frame, image=photo, command=lambda: run_script(character))
+        button = tk.Button(character_frame, image=photo, command=lambda: run_script(character))
         button.image = photo  # Manter referência da imagem para evitar garbage collection
-        button.pack(side=tk.LEFT, padx=10, pady=10)
+        button.pack(side=tk.TOP)
     else:
-        button = tk.Button(frame, text=character, command=lambda: run_script(character))
-        button.pack(side=tk.LEFT, padx=10, pady=10)
+        print(f"Image not found for character: {character}")  # Adiciona depuração
+        button = tk.Button(character_frame, text=character, command=lambda: run_script(character))
+        button.pack(side=tk.TOP)
+
+    label_text = tk.Label(character_frame, text=character)
+    label_text.pack(side=tk.TOP)
+    character_frame.pack(side=tk.LEFT, padx=10, pady=10)
 
 # Configurar a janela principal
 root = tk.Tk()
