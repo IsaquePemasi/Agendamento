@@ -30,6 +30,7 @@ character_scripts = {
     "suporte": os.path.join(base_pathB, "suporte.py"),
     "winry": os.path.join(base_pathB, "winry.py"),
     "yoruichi": os.path.join(base_pathB, "yoruichi.py"),
+    "yuno": os.path.join(base_pathB, "yuno.py"),
     "ada": os.path.join(base_pathC, "ada.py"), 
     "docinho": os.path.join(base_pathC, "docinho.py"),
     "itachi": os.path.join(base_pathC, "itachi.py"),        
@@ -55,7 +56,7 @@ def run_script(character):
         messagebox.showerror("Error", f"Script for {character} not found.")
 
 # Função para criar botões com imagens e textos
-def create_button(frame, character):
+def create_button(frame, character, row, col):
     image_path = os.path.join("images", f"{character}.png")
     print(f"Trying to load image from: {image_path}")  # Adiciona depuração
     character_frame = tk.Frame(frame)
@@ -73,19 +74,47 @@ def create_button(frame, character):
 
     label_text = tk.Label(character_frame, text=character)
     label_text.pack(side=tk.TOP)
-    character_frame.pack(side=tk.LEFT, padx=10, pady=10)
+    character_frame.grid(row=row, column=col, padx=10, pady=10)
 
 # Configurar a janela principal
 root = tk.Tk()
 root.title("Character Scripts Executor")
 
-# Frame para conter os botões
-frame = tk.Frame(root)
-frame.pack(padx=20, pady=20)
+# Canvas e barra de rolagem
+canvas = tk.Canvas(root, borderwidth=0)
+scroll_y = tk.Scrollbar(root, orient="vertical", command=canvas.yview)
+
+# Frame que conterá todos os widgets
+frame = tk.Frame(canvas)
+
+# Configurar o canvas e a barra de rolagem
+frame_id = canvas.create_window((0, 0), window=frame, anchor='nw')
+canvas.configure(yscrollcommand=scroll_y.set)
+
+# Atualizar o tamanho do canvas para caber os widgets
+def on_frame_configure(event):
+    canvas.configure(scrollregion=canvas.bbox("all"))
+
+frame.bind("<Configure>", on_frame_configure)
+
+canvas.pack(side="left", fill="both", expand=True)
+scroll_y.pack(side="right", fill="y")
 
 # Criar botões para cada personagem
-for character in character_scripts.keys():
-    create_button(frame, character)
+row = 0
+col = 0
+for i, character in enumerate(character_scripts.keys()):
+    create_button(frame, character, row, col)
+    col += 1
+    if col >= 7:
+        col = 0
+        row += 1
+
+# Ajustar o canvas para redimensionar corretamente
+def on_canvas_configure(event):
+    canvas.itemconfig(frame_id, width=canvas.winfo_width())
+
+canvas.bind('<Configure>', on_canvas_configure)
 
 # Iniciar o loop principal do tkinter
 root.mainloop()
