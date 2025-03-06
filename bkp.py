@@ -4,6 +4,14 @@ from PIL import Image, ImageTk
 import subprocess
 import os
 import pyautogui
+from datetime import datetime
+
+# Configurar o tkinter para alta DPI
+try:
+    from ctypes import windll
+    windll.shcore.SetProcessDpiAwareness(1)
+except:
+    pass
 
 # Caminho base comum
 base_path = r"C:\Users\a925216\OneDrive - ATOS\Desktop\Agendamento\spam_automatizado\perfis\A"
@@ -44,6 +52,13 @@ character_scripts = {
     "temari": os.path.join(base_pathC, "temari.py"), 
 }
 
+# Função para obter o tamanho ideal da imagem com base na largura da tela
+def get_image_size(screen_width):
+    if screen_width < 1920:
+        return 227, 227
+    else:
+        return 335, 335
+
 # Função para executar o script Python
 def run_script(character):
     script_path = character_scripts.get(character)
@@ -52,22 +67,34 @@ def run_script(character):
     pyautogui.hotkey('alt', 'tab')
     
     if script_path and os.path.exists(script_path):
+        start_time = datetime.now()
         try:
             subprocess.run(["python", script_path], check=True)
-            messagebox.showinfo("Sucesso", f"Script de {character} executado com sucesso!")
+            end_time = datetime.now()
+            duration = end_time - start_time
+            messagebox.showinfo("Sucesso", f"Script de {character} executado com sucesso!\n"
+                                           f"Início: {start_time.strftime('%H:%M:%S')}\n"
+                                           f"Término: {end_time.strftime('%H:%M:%S')}\n"
+                                           f"Duração: {duration}")
         except subprocess.CalledProcessError as e:
-            messagebox.showerror("Erro: ", f"Falha ao executar o script de {character}.\nErro: {e}")
+            end_time = datetime.now()
+            duration = end_time - start_time
+            messagebox.showerror("Erro", f"Falha ao executar o script de {character}.\n"
+                                         f"Início: {start_time.strftime('%H:%M:%S')}\n"
+                                         f"Término: {end_time.strftime('%H:%M:%S')}\n"
+                                         f"Duração: {duration}\n"
+                                         f"Erro: {e}")
     else:
-        messagebox.showerror("Erro: ", f"Script de {character} não encontrado.")
+        messagebox.showerror("Erro", f"Script de {character} não encontrado.")
 
 # Função para criar botões com imagens e textos
-def create_button(frame, character, row, col):
+def create_button(frame, character, row, col, image_size):
     image_path = os.path.join("images", f"{character}.png")
     print(f"Tentando carregar a imagem de: {image_path}")  # Adiciona depuração
     character_frame = tk.Frame(frame, padx=10, pady=10, bg='#f0f0f0')
     if os.path.exists(image_path):
         image = Image.open(image_path)
-        image = image.resize((335, 335), Image.Resampling.LANCZOS)  # Alterado para 150x150 pixels
+        image = image.resize(image_size, Image.Resampling.LANCZOS)
         photo = ImageTk.PhotoImage(image)
         button = tk.Button(character_frame, image=photo, command=lambda: run_script(character), bg='#f0f0f0', bd=0)
         button.image = photo  # Manter referência da imagem para evitar garbage collection
@@ -86,9 +113,15 @@ root = tk.Tk()
 root.title("TeleSpam")
 root.configure(bg='#ffffff')
 
+# Obter largura da tela
+screen_width = root.winfo_screenwidth()
+
+# Obter tamanho da imagem com base na largura da tela
+image_size = get_image_size(screen_width)
+
 # Adicionar ícone à janela principal
-# icon_path = os.path.join("images", "app_icon.ico")  # Caminho do ícone
-# root.iconbitmap(icon_path)
+icon_path = os.path.join("images", "app_icon.ico")  # Caminho do ícone
+root.iconbitmap(icon_path)
 
 # Canvas e barra de rolagem
 canvas = tk.Canvas(root, borderwidth=0, bg='#ffffff')
@@ -121,7 +154,7 @@ scroll_y.pack(side="right", fill="y")
 row = 0
 col = 0
 for i, character in enumerate(character_scripts.keys()):
-    create_button(frame, character, row, col)
+    create_button(frame, character, row, col, image_size)
     col += 1
     if col >= 5:  # Ajustado para fazer 5 colunas em vez de 7, para acomodar o tamanho maior dos botões
         col = 0
