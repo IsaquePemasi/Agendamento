@@ -35,39 +35,23 @@ def run_script(character):
 # Função para criar botões com imagens e textos
 def create_button(frame, character):
     image_path = os.path.join("images", f"{character}.png")
-    hover_image_path = os.path.join("images", f"{character}_hover.png")
-
-    # Carregar imagem normal
+    print(f"Trying to load image from: {image_path}")  # Adiciona depuração
+    character_frame = tk.Frame(frame)
     if os.path.exists(image_path):
         image = Image.open(image_path)
         image = image.resize((100, 100), Image.Resampling.LANCZOS)
         photo = ImageTk.PhotoImage(image)
+        button = tk.Button(character_frame, image=photo, command=lambda: run_script(character))
+        button.image = photo  # Manter referência da imagem para evitar garbage collection
+        button.pack(side=tk.TOP)
     else:
-        print(f"Image not found for character: {character}")
-        return  # Se não encontrar a imagem, não cria o botão
+        print(f"Image not found for character: {character}")  # Adiciona depuração
+        button = tk.Button(character_frame, text=character, command=lambda: run_script(character))
+        button.pack(side=tk.TOP)
 
-    # Carregar imagem de hover, se existir
-    if os.path.exists(hover_image_path):
-        hover_image = Image.open(hover_image_path)
-        hover_image = hover_image.resize((100, 100), Image.Resampling.LANCZOS)
-        hover_photo = ImageTk.PhotoImage(hover_image)
-    else:
-        hover_photo = photo  # Use a mesma imagem se não houver imagem de hover
-
-    button = tk.Button(frame, image=photo, command=lambda: run_script(character))
-
-    # Adicionar comportamento de hover
-    button.bind("<Enter>", lambda e: button.config(image=hover_photo))
-    button.bind("<Leave>", lambda e: button.config(image=photo))
-
-    button.image = photo  # Manter referência da imagem para evitar garbage collection
-    button.hover_image = hover_photo  # Manter referência da imagem de hover
-
-    button.pack(side=tk.TOP)
-
-    label_text = tk.Label(frame, text=character)
+    label_text = tk.Label(character_frame, text=character)
     label_text.pack(side=tk.TOP)
-    frame.pack(side=tk.LEFT, padx=10, pady=10)
+    character_frame.pack(side=tk.LEFT, padx=10, pady=10)
 
 # Configurar a janela principal
 root = tk.Tk()
@@ -79,8 +63,7 @@ frame.pack(padx=20, pady=20)
 
 # Criar botões para cada personagem
 for character in character_scripts.keys():
-    character_frame = tk.Frame(frame)
-    create_button(character_frame, character)
+    create_button(frame, character)
 
 # Iniciar o loop principal do tkinter
 root.mainloop()
