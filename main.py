@@ -100,8 +100,8 @@ root.title("TeleSpam")
 root.configure(bg='#ffffff')
 
 # Adicionar ícone à janela principal
-# icon_path = os.path.join("images", "app_icon.ico")  # Caminho do ícone
-# root.iconbitmap(icon_path)
+icon_path = os.path.join("images", "app_icon.ico")  # Caminho do ícone
+root.iconbitmap(icon_path)
 
 # Canvas e barra de rolagem
 canvas = tk.Canvas(root, borderwidth=0, bg='#ffffff')
