@@ -1,9 +1,10 @@
 import tkinter as tk
-from tkinter import messagebox
+from tkinter import ttk, messagebox
 from PIL import Image, ImageTk
 import subprocess
 import os
 import pyautogui
+from datetime import datetime
 
 # Caminho base comum
 base_path = r"C:\Users\a925216\OneDrive - ATOS\Desktop\Agendamento\spam_automatizado\perfis\A"
@@ -52,45 +53,62 @@ def run_script(character):
     pyautogui.hotkey('alt', 'tab')
     
     if script_path and os.path.exists(script_path):
+        start_time = datetime.now()
         try:
             subprocess.run(["python", script_path], check=True)
-            messagebox.showinfo("Success", f"Executed {character}'s script successfully!")
+            end_time = datetime.now()
+            duration = end_time - start_time
+            messagebox.showinfo("Sucesso", f"Script de {character} executado com sucesso!\n"
+                                           f"Início: {start_time.strftime('%H:%M:%S')}\n"
+                                           f"Término: {end_time.strftime('%H:%M:%S')}\n"
+                                           f"Duração: {duration}")
         except subprocess.CalledProcessError as e:
-            messagebox.showerror("Error", f"Failed to execute {character}'s script.\nError: {e}")
+            end_time = datetime.now()
+            duration = end_time - start_time
+            messagebox.showerror("Erro", f"Falha ao executar o script de {character}.\n"
+                                         f"Início: {start_time.strftime('%H:%M:%S')}\n"
+                                         f"Término: {end_time.strftime('%H:%M:%S')}\n"
+                                         f"Duração: {duration}\n"
+                                         f"Erro: {e}")
     else:
-        messagebox.showerror("Error", f"Script for {character} not found.")
+        messagebox.showerror("Erro", f"Script de {character} não encontrado.")
 
 # Função para criar botões com imagens e textos
 def create_button(frame, character, row, col):
     image_path = os.path.join("images", f"{character}.png")
-    print(f"Trying to load image from: {image_path}")  # Adiciona depuração
-    character_frame = tk.Frame(frame)
+    print(f"Tentando carregar a imagem de: {image_path}")  # Adiciona depuração
+    character_frame = tk.Frame(frame, padx=10, pady=10, bg='#f0f0f0')
     if os.path.exists(image_path):
         image = Image.open(image_path)
-        image = image.resize((100, 100), Image.Resampling.LANCZOS)
+        image = image.resize((335, 335), Image.Resampling.LANCZOS)  # Alterado para 150x150 pixels
         photo = ImageTk.PhotoImage(image)
-        button = tk.Button(character_frame, image=photo, command=lambda: run_script(character))
+        button = tk.Button(character_frame, image=photo, command=lambda: run_script(character), bg='#f0f0f0', bd=0)
         button.image = photo  # Manter referência da imagem para evitar garbage collection
-        button.pack(side=tk.TOP)
+        button.pack(side=tk.TOP, pady=(0, 5))
     else:
-        print(f"Image not found for character: {character}")  # Adiciona depuração
-        button = tk.Button(character_frame, text=character, command=lambda: run_script(character))
-        button.pack(side=tk.TOP)
+        print(f"Imagem não encontrada para o personagem: {character}")  # Adiciona depuração
+        button = tk.Button(character_frame, text=character, command=lambda: run_script(character), bg='#f0f0f0', bd=0)
+        button.pack(side=tk.TOP, pady=(0, 5))
 
-    label_text = tk.Label(character_frame, text=character)
+    label_text = tk.Label(character_frame, text=character, bg='#f0f0f0', font=('Arial', 12))
     label_text.pack(side=tk.TOP)
     character_frame.grid(row=row, column=col, padx=10, pady=10)
 
 # Configurar a janela principal
 root = tk.Tk()
-root.title("Character Scripts Executor")
+root.title("TeleSpam")
+root.configure(bg='#ffffff')
+
+# Adicionar ícone à janela principal
+# icon_path = os.path.join("images", "app_icon.ico")  # Caminho do ícone
+# root.iconbitmap(icon_path)
 
 # Canvas e barra de rolagem
-canvas = tk.Canvas(root, borderwidth=0)
-scroll_y = tk.Scrollbar(root, orient="vertical", command=canvas.yview)
+canvas = tk.Canvas(root, borderwidth=0, bg='#ffffff')
+scroll_y = ttk.Scrollbar(root, orient="vertical", command=canvas.yview)
 
 # Frame que conterá todos os widgets
-frame = tk.Frame(canvas)
+frame = tk.Frame(canvas, bg='#ffffff')
 
 # Configurar o canvas e a barra de rolagem
 frame_id = canvas.create_window((0, 0), window=frame, anchor='nw')
@@ -102,6 +120,13 @@ def on_frame_configure(event):
 
 frame.bind("<Configure>", on_frame_configure)
 
+# Função para rolar com o mouse
+def on_mouse_wheel(event):
+    canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+
+# Bind do evento do mouse wheel ao canvas
+canvas.bind_all("<MouseWheel>", on_mouse_wheel)
+
 canvas.pack(side="left", fill="both", expand=True)
 scroll_y.pack(side="right", fill="y")
 
@@ -111,7 +136,7 @@ col = 0
 for i, character in enumerate(character_scripts.keys()):
     create_button(frame, character, row, col)
     col += 1
-    if col >= 7:
+    if col >= 5:  # Ajustado para fazer 5 colunas em vez de 7, para acomodar o tamanho maior dos botões
         col = 0
         row += 1
 
