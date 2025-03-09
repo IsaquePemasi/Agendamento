@@ -10,42 +10,50 @@ xVoltar = 167
 yVoltar = 47
 tempo_minimo = 2 #1
 tempo_medio = 2 #2.5
-xDia = 537
-yDia = 330
+xDia = 585
+yDia = 329
 x_central = 1072
 y_central = 351
-x1 = 328  # Coordenada X desejada
-y1 = 153  # Coordenada Y desejada
-x2 = 331  # Coordenada X desejada
-y2 = 214  # Coordenada Y desejada
-x3 = 308  # Coordenada X desejada
-y3 = 229  # Coordenada Y desejada
-x4 = 292  # Coordenada X desejada
-y4 = 219  # Coordenada Y desejada
-x5 = 334  # Coordenada X desejada
-y5 = 206  # Coordenada Y desejada
-x6 = 366  # Coordenada X desejada
-y6 = 271  # Coordenada Y desejada
-x7 = 384  # Coordenada X desejada
-y7 = 405  # Coordenada Y desejada
+x1 = 301  # Coordenada X desejada
+y1 = 155  # Coordenada Y desejada
+x2 = 307  # Coordenada X desejada
+y2 = 218  # Coordenada Y desejada
+x3 = 279  # Coordenada X desejada
+y3 = 277  # Coordenada Y desejada
+x4 = 289  # Coordenada X desejada
+y4 = 266  # Coordenada Y desejada
+x5 = 304  # Coordenada X desejada
+y5 = 253  # Coordenada Y desejada
+x6 = 303  # Coordenada X desejada
+y6 = 290  # Coordenada Y desejada
+x7 = 300  # Coordenada X desejada
+y7 = 341  # Coordenada Y desejada
 x8 = 299  # Coordenada X desejada
-y8 = 415  # Coordenada Y desejada
-x9 = 367  # Coordenada X desejada
-y9 = 386  # Coordenada Y desejada
-x10 = 293  # Coordenada X desejada
-y10 = 337  # Coordenada Y desejada
-x11 = 334  # Coordenada X desejada
-y11 = 287  # Coordenada Y desejada
-x12 = 292  # Coordenada X desejada
-y12 = 238  # Coordenada Y desejada
-x13 = 298  # Coordenada X desejada
-y13 = 268  # Coordenada Y desejada
-x14 = 297  # Coordenada X desejada
-y14 = 409  # Coordenada Y desejada
-x15 = 305  # Coordenada X desejada
-y15 = 532  # Coordenada Y desejada
-x16 = 298  # Coordenada X desejada
-y16 = 619  # Coordenada Y desejada
+y8 = 329  # Coordenada Y desejada
+x9 = 315  # Coordenada X desejada
+y9 = 320  # Coordenada Y desejada
+x10 = 299  # Coordenada X desejada
+y10 = 307  # Coordenada Y desejada
+x11 = 303  # Coordenada X desejada
+y11 = 294  # Coordenada Y desejada
+x12 = 322  # Coordenada X desejada
+y12 = 282  # Coordenada Y desejada
+x13 = 305  # Coordenada X desejada
+y13 = 266  # Coordenada Y desejada
+x14 = 311  # Coordenada X desejada
+y14 = 260  # Coordenada Y desejada
+x15 = 309  # Coordenada X desejada
+y15 = 246  # Coordenada Y desejada
+x16 = 360  # Coordenada X desejada
+y16 = 296  # Coordenada Y desejada
+x17 = 351  # Coordenada X desejada
+y17 = 388  # Coordenada Y desejada
+x18 = 303  # Coordenada X desejada
+y18 = 486  # Coordenada Y desejada
+x19 = 368  # Coordenada X desejada
+y19 = 515  # Coordenada Y desejada
+x20 = 395  # Coordenada X desejada
+y20 = 641  # Coordenada Y desejada
 ###################################################################################################
 def script_definitivo_click(): 
 
@@ -1209,7 +1217,9 @@ def script_definitivo_click():
         
     # Pressionar ENTER
     pyautogui.press('enter')
-######################################################### 
+
+########################################################
+###############################################################
 # Espera 2 segundos
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
@@ -1241,7 +1251,7 @@ pyautogui.moveTo(x_central, y_central, duration = 1)
 pyautogui.click()
 # Faz o scroll para baixo X "cliques"
 pyautogui.scroll(-150)
-# ###################################################################################################
+###################################################################################################
 # Espera 2 segundos
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
@@ -1272,7 +1282,7 @@ pyautogui.moveTo(x_central, y_central, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Faz o scroll para baixo X "cliques"
-pyautogui.scroll(-250)
+pyautogui.scroll(-150)
 # ###################################################################################################
 # Espera 2 segundos
 time.sleep(1)
@@ -1347,7 +1357,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_medio)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(xAgendamentoDireita, yAgendamentoDireita, duration = 1)
+pyautogui.moveTo(xAgendamento, yAgendamento, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Espera o tempo minimo
@@ -1432,7 +1442,7 @@ pyautogui.moveTo(x_central, y_central, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Faz o scroll para baixo X "cliques"
-pyautogui.scroll(-250)
+pyautogui.scroll(-150)
 ###################################################################################################
 # Espera 2 segundo
 time.sleep(1)
@@ -1457,14 +1467,14 @@ pyautogui.moveTo(xVoltar, yVoltar, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Realiza um clique na posição atual do mouse
-pyautogui.click()   
+pyautogui.click()
 ###################################################################################################
 # Mova o ponteiro do mouse para o ponto central
 pyautogui.moveTo(x_central, y_central, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Faz o scroll para baixo X "cliques"
-pyautogui.scroll(-350)
+pyautogui.scroll(-150)
 ###################################################################################################
 # Espera 2 segundo
 time.sleep(1)
@@ -1496,40 +1506,40 @@ pyautogui.moveTo(x_central, y_central, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Faz o scroll para baixo X "cliques"
-pyautogui.scroll(-350)
+pyautogui.scroll(-150)
 ###################################################################################################
 # Espera 2 segundo
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 pyautogui.moveTo(x10, y10, duration = 1)
-# Realiza um clique na posição atual do mouse
 time.sleep(1)
-# pyautogui.click()
-# # Espera o tempo minimo
-# time.sleep(tempo_medio)
-# # Move o mouse para a posição (x, y) na tela
-# pyautogui.moveTo(xAgendamento, yAgendamento, duration = 1)
-# # Realiza um clique na posição atual do mouse
-# pyautogui.click()
-# # Espera o tempo minimo
-# time.sleep(tempo_minimo)
-# # Executa a função script_definitivo_click
-# script_definitivo_click()
-# # Espera o tempo minimo
-# time.sleep(tempo_minimo)
-# # Move o mouse para a posição (x, y) na tela
-# pyautogui.moveTo(xVoltar, yVoltar, duration = 1)
-# # Realiza um clique na posição atual do mouse
-# pyautogui.click()
-# # Realiza um clique na posição atual do mouse
-# pyautogui.click()
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Espera o tempo minimo
+time.sleep(tempo_medio)
+# Move o mouse para a posição (x, y) na tela
+pyautogui.moveTo(xAgendamento, yAgendamento, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Espera o tempo minimo
+time.sleep(tempo_minimo)
+# Executa a função script_definitivo_click
+script_definitivo_click()
+# Espera o tempo minimo
+time.sleep(tempo_minimo)
+# Move o mouse para a posição (x, y) na tela
+pyautogui.moveTo(xVoltar, yVoltar, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
 ###################################################################################################
 # Mova o ponteiro do mouse para o ponto central
 pyautogui.moveTo(x_central, y_central, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Faz o scroll para baixo X "cliques"
-pyautogui.scroll(-350)
+pyautogui.scroll(-150)
 ###################################################################################################
 # Espera 2 segundo
 time.sleep(1)
@@ -1561,7 +1571,7 @@ pyautogui.moveTo(x_central, y_central, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Faz o scroll para baixo X "cliques"
-pyautogui.scroll(-350)
+pyautogui.scroll(-150)
 ###################################################################################################
 # Espera 2 segundo
 time.sleep(1)
@@ -1569,32 +1579,32 @@ time.sleep(1)
 pyautogui.moveTo(x12, y12, duration = 1)
 time.sleep(1)
 # Realiza um clique na posição atual do mouse
-# pyautogui.click()
-# # Espera o tempo minimo
-# time.sleep(tempo_medio)
-# # Move o mouse para a posição (x, y) na tela
-# pyautogui.moveTo(xAgendamento, yAgendamento, duration = 1)
-# # Realiza um clique na posição atual do mouse
-# pyautogui.click()
-# # Espera o tempo minimo
-# time.sleep(tempo_minimo)
-# # Executa a função script_definitivo_click
-# script_definitivo_click()
-# # Espera o tempo minimo
-# time.sleep(tempo_minimo)
-# # Move o mouse para a posição (x, y) na tela
-# pyautogui.moveTo(xVoltar, yVoltar, duration = 1)
-# # Realiza um clique na posição atual do mouse
-# pyautogui.click()
-# # Realiza um clique na posição atual do mouse
-# pyautogui.click()
+pyautogui.click()
+# Espera o tempo minimo
+time.sleep(tempo_medio)
+# Move o mouse para a posição (x, y) na tela
+pyautogui.moveTo(xAgendamento, yAgendamento, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Espera o tempo minimo
+time.sleep(tempo_minimo)
+# Executa a função script_definitivo_click
+script_definitivo_click()
+# Espera o tempo minimo
+time.sleep(tempo_minimo)
+# Move o mouse para a posição (x, y) na tela
+pyautogui.moveTo(xVoltar, yVoltar, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
 ###################################################################################################
 # Mova o ponteiro do mouse para o ponto central
 pyautogui.moveTo(x_central, y_central, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Faz o scroll para baixo X "cliques"
-pyautogui.scroll(-350)
+pyautogui.scroll(-150)
 ###################################################################################################
 # Espera 2 segundo
 time.sleep(1)
@@ -1626,7 +1636,7 @@ pyautogui.moveTo(x_central, y_central, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Faz o scroll para baixo X "cliques"
-pyautogui.scroll(-350)
+pyautogui.scroll(-150)
 ###################################################################################################
 # Espera 2 segundo
 time.sleep(1)
@@ -1658,7 +1668,7 @@ pyautogui.moveTo(x_central, y_central, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Faz o scroll para baixo X "cliques"
-pyautogui.scroll(-350)
+pyautogui.scroll(-150)
 ###################################################################################################
 # Espera 2 segundo
 time.sleep(1)
@@ -1690,7 +1700,7 @@ pyautogui.moveTo(x_central, y_central, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Faz o scroll para baixo X "cliques"
-pyautogui.scroll(-350)
+pyautogui.scroll(-150)
 ###################################################################################################
 # Espera 2 segundo
 time.sleep(1)
@@ -1722,5 +1732,133 @@ pyautogui.moveTo(x_central, y_central, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Faz o scroll para baixo X "cliques"
-pyautogui.scroll(-350)
+pyautogui.scroll(-150)
+###################################################################################################
+# Espera 2 segundo
+time.sleep(1)
+# Move o mouse para a posição (x, y) na tela
+pyautogui.moveTo(x17, y17, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Espera o tempo minimo
+time.sleep(tempo_medio)
+# Move o mouse para a posição (x, y) na tela
+pyautogui.moveTo(xAgendamento, yAgendamento, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Espera o tempo minimo
+time.sleep(tempo_minimo)
+# Executa a função script_definitivo_click
+script_definitivo_click()
+# Espera o tempo minimo
+time.sleep(tempo_minimo)
+# Move o mouse para a posição (x, y) na tela
+pyautogui.moveTo(xVoltar, yVoltar, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+###################################################################################################
+# Mova o ponteiro do mouse para o ponto central
+pyautogui.moveTo(x_central, y_central, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Faz o scroll para baixo X "cliques"
+pyautogui.scroll(-150)
+###################################################################################################
+# Espera 2 segundo
+time.sleep(1)
+# Move o mouse para a posição (x, y) na tela
+pyautogui.moveTo(x18, y18, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Espera o tempo minimo
+time.sleep(tempo_medio)
+# Move o mouse para a posição (x, y) na tela
+pyautogui.moveTo(xAgendamento, yAgendamento, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Espera o tempo minimo
+time.sleep(tempo_minimo)
+# Executa a função script_definitivo_click
+script_definitivo_click()
+# Espera o tempo minimo
+time.sleep(tempo_minimo)
+# Move o mouse para a posição (x, y) na tela
+pyautogui.moveTo(xVoltar, yVoltar, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+###################################################################################################
+# Mova o ponteiro do mouse para o ponto central
+pyautogui.moveTo(x_central, y_central, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Faz o scroll para baixo X "cliques"
+pyautogui.scroll(-150)
+###################################################################################################
+# Espera 2 segundo
+time.sleep(1)
+# Move o mouse para a posição (x, y) na tela
+pyautogui.moveTo(x19, y19, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Espera o tempo minimo
+time.sleep(tempo_medio)
+# Move o mouse para a posição (x, y) na tela
+pyautogui.moveTo(xAgendamentoDireita, yAgendamentoDireita, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Espera o tempo minimo
+time.sleep(tempo_minimo)
+# Executa a função script_definitivo_click
+script_definitivo_click()
+# Espera o tempo minimo
+time.sleep(tempo_minimo)
+# Move o mouse para a posição (x, y) na tela
+pyautogui.moveTo(xVoltar, yVoltar, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+###################################################################################################
+# Mova o ponteiro do mouse para o ponto central
+pyautogui.moveTo(x_central, y_central, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Faz o scroll para baixo X "cliques"
+pyautogui.scroll(-150)
+###################################################################################################
+# Espera 2 segundo
+time.sleep(1)
+# Move o mouse para a posição (x, y) na tela
+pyautogui.moveTo(x20, y20, duration = 1)
+# Realiza um clique na posição atual do mouse
+# pyautogui.click()
+# # Espera o tempo minimo
+# time.sleep(tempo_medio)
+# # Move o mouse para a posição (x, y) na tela
+# pyautogui.moveTo(xAgendamento, yAgendamento, duration = 1)
+# # Realiza um clique na posição atual do mouse
+# pyautogui.click()
+# # Espera o tempo minimo
+# time.sleep(tempo_minimo)
+# # Executa a função script_definitivo_click
+# script_definitivo_click()
+# # Espera o tempo minimo
+# time.sleep(tempo_minimo)
+# # Move o mouse para a posição (x, y) na tela
+# pyautogui.moveTo(xVoltar, yVoltar, duration = 1)
+# # Realiza um clique na posição atual do mouse
+# pyautogui.click()
+# # Realiza um clique na posição atual do mouse
+# pyautogui.click()
+###################################################################################################
+# Mova o ponteiro do mouse para o ponto central
+pyautogui.moveTo(x_central, y_central, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Faz o scroll para baixo X "cliques"
+pyautogui.scroll(-150)
 ###################################################################################################
