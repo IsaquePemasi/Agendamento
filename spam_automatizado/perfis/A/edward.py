@@ -1208,6 +1208,7 @@ def script_definitivo_click():
         
     # Pressionar ENTER
     pyautogui.press('enter')
+
 ###################################################################################################
 # Espera 2 segundos
 time.sleep(1)
