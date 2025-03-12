@@ -7,4 +7,5 @@ time.sleep(5)
 
 # Obtém a posição atual do mouse
 x, y = pyautogui.position()
-print(f"A posição atual do mouse é: ({x}, {y})")
+print(f"xDia = {x}")
+print(f"yDia = {y}")
