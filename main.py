@@ -50,6 +50,7 @@ character_scripts = {
     "spike": os.path.join(base_pathC, "spike.py"), 
     "light": os.path.join(base_pathC, "light.py"),
     "ada": os.path.join(base_pathC, "ada.py"), 
+    "18": os.path.join(base_pathB, "18.py"),
 }
 
 # Função para obter o tamanho ideal da imagem com base na largura da tela
