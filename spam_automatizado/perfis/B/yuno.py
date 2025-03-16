@@ -1576,7 +1576,6 @@ pyautogui.scroll(-150)
 time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 pyautogui.moveTo(x12, y12, duration = 1)
-time.sleep(1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Espera o tempo minimo
