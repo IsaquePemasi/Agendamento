@@ -64,16 +64,21 @@ def get_image_size(screen_width):
 def run_script(character):
     script_path = character_scripts.get(character)
     
-    # Simular Alt + Tab
+    # Simular Alt + Tab antes da execução
     pyautogui.hotkey('alt', 'tab')
     
     if script_path and os.path.exists(script_path):
         start_time = datetime.now()
         try:
-            subprocess.run(["python", script_path], check=True)
+            process = subprocess.Popen(["python", script_path])
+            process.wait()  # Espera o término do processo
             end_time = datetime.now()
             duration = end_time - start_time
             duration_str = str(duration).split('.')[0]  # Remover milissegundos
+            
+            # Simular Alt + Tab antes de mostrar a mensagem
+            pyautogui.hotkey('alt', 'tab')
+            
             messagebox.showinfo("Sucesso", f"Script de {character} executado com sucesso!\n"
                                            f"Início: {start_time.strftime('%H:%M:%S')}\n"
                                            f"Término: {end_time.strftime('%H:%M:%S')}\n"
@@ -82,12 +87,19 @@ def run_script(character):
             end_time = datetime.now()
             duration = end_time - start_time
             duration_str = str(duration).split('.')[0]  # Remover milissegundos
+            
+            # Simular Alt + Tab antes de mostrar a mensagem
+            pyautogui.hotkey('alt', 'tab')
+            
             messagebox.showerror("Erro", f"Falha ao executar o script de {character}.\n"
                                          f"Início: {start_time.strftime('%H:%M:%S')}\n"
                                          f"Término: {end_time.strftime('%H:%M:%S')}\n"
                                          f"Duração: {duration_str}\n"  # Mudança aqui
                                          f"Erro: {e}")
     else:
+        # Simular Alt + Tab antes de mostrar a mensagem
+        pyautogui.hotkey('alt', 'tab')
+        
         messagebox.showerror("Erro", f"Script de {character} não encontrado.")
 
 # Função para criar botões com imagens e textos
