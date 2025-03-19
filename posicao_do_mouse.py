@@ -56,7 +56,7 @@ arquivosC = [
     r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\itachi.py",
     r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\jill.py",
     r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\light.py",
-    r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\miksa.py",
+    r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\misa.py",
     r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\misa.py",
     r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\sailor.py",
     r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\spike.py",
