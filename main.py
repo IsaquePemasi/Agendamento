@@ -30,6 +30,7 @@ character_scripts = {
     "misato": os.path.join(base_path, "misato.py"),
     "tsunade": os.path.join(base_path, "tsunade.py"),
     "suporte": os.path.join(base_pathB, "suporte.py"),
+    "18": os.path.join(base_pathB, "18.py"),
     "lara": os.path.join(base_pathB, "lara.py"),
     "rias": os.path.join(base_pathB, "rias.py"),
     "naruto": os.path.join(base_pathB, "naruto.py"),
@@ -50,7 +51,15 @@ character_scripts = {
     "spike": os.path.join(base_pathC, "spike.py"), 
     "light": os.path.join(base_pathC, "light.py"),
     "ada": os.path.join(base_pathC, "ada.py"), 
-    "18": os.path.join(base_pathB, "18.py"),
+    "ana": os.path.join(base_pathC, "ana.py"), 
+    "nicole": os.path.join(base_pathC, "nicole.py"), 
+    "alexandra": os.path.join(base_pathC, "alexandra.py"), 
+    "margot": os.path.join(base_pathC, "margot.py"), 
+    "megan": os.path.join(base_pathC, "megan.py"), 
+    "jennifer": os.path.join(base_pathC, "jennifer.py"), 
+    "jodie": os.path.join(base_pathC, "jodie.py"), 
+    "julia": os.path.join(base_pathC, "julia.py"), 
+    "marilyn": os.path.join(base_pathC, "marilyn.py"), 
 }
 
 # Função para obter o tamanho ideal da imagem com base na largura da tela

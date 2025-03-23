@@ -61,6 +61,15 @@ arquivosC = [
     r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\sailor.py",
     r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\spike.py",
     r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\temari.py",
+    r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\ana.py",
+    r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\marilyn.py",
+    r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\julia.py",
+    r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\jodie.py",
+    r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\jennifer.py",
+    r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\megan.py",
+    r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\margot.py",
+    r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\alexandra.py",
+    r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C\nicole.py"
 ]
 
 # Escolhe a lista de arquivos com base na escolha do usuário
