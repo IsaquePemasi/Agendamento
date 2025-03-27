@@ -1,3 +1,4 @@
+# pip install moviepy
 from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip
 
 def add_subtitle_to_video(video_path, subtitle_text, output_path):
