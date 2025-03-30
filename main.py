@@ -137,6 +137,9 @@ root = tk.Tk()
 root.title("TeleSpam")
 root.configure(bg='#ffffff')
 
+# Maximizar a janela principal
+root.state('zoomed')
+
 # Obter largura da tela
 screen_width = root.winfo_screenwidth()
 
