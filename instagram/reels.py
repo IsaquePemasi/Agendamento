@@ -1,41 +1,23 @@
-import os
 import ffmpeg
 
-def add_subtitle_to_video(video_path, subtitle_text, output_dir):
-    # Obter a duração do vídeo
-    probe = ffmpeg.probe(video_path)
-    video_duration = float(probe['format']['duration'])
-
-    # Obter o nome do arquivo de entrada
-    input_filename = os.path.basename(video_path)
-
-    # Criar o caminho do arquivo de saída no diretório especificado
-    output_path = os.path.join(output_dir, input_filename)
-
-    # Criar filtro de legenda diretamente
-    subtitle_lines = f"drawtext=text='{subtitle_text}':fontcolor=white:fontsize=24:x=(w-text_w)/2:y=h-50:enable='between(t,0,{video_duration})'"
+def add_subtitle_to_video(video_path, subtitle_text, output_path):
+    # Temporário: criar um arquivo de legendas SRT
+    subtitle_file = 'temp_subtitle.srt'
+    # r'C:\Users\USUARIO\Desktop\Agendamento\instagram\Sophie Rain - Tell Your GF Recoil Dance #shorts.mp4'
+    with open(subtitle_file, 'w') as f:
+        f.write(f"1\n00:00:00,000 --> 00:00:10,000\n{subtitle_text}\n")
 
     # Usar ffmpeg para adicionar legendas ao vídeo
     (
         ffmpeg
         .input(video_path)
-        .output(output_path, vf=subtitle_lines)
+        .output(output_path, vf='subtitles={}'.format(subtitle_file))
         .run(overwrite_output=True)
     )
 
 # Uso
 video_path = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\entrada\SophieRain.mp4'
 subtitle_text = 'Sua legenda aqui'
-output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
+output_path = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida\SophieRain.mp4'
 
-add_subtitle_to_video(video_path, subtitle_text, output_dir)
-
-#   File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels.py", line 31, in <module>
-#     add_subtitle_to_video(video_path, subtitle_text, output_dir)
-#     ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#   File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels.py", line 23, in add_subtitle_to_video
-#     .run(overwrite_output=True)
-#      ~~~^^^^^^^^^^^^^^^^^^^^^^^
-#   File "C:\Users\USUARIO\AppData\Local\Programs\Python\Python313\Lib\site-packages\ffmpeg\_run.py", line 325, in run
-#     raise Error('ffmpeg', out, err)
-# ffmpeg._run.Error: ffmpeg error (see stderr output for detail)
+add_subtitle_to_video(video_path, subtitle_text, output_path)
