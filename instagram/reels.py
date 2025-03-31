@@ -29,3 +29,13 @@ subtitle_text = 'Sua legenda aqui'
 output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
 
 add_subtitle_to_video(video_path, subtitle_text, output_dir)
+
+#   File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels.py", line 31, in <module>
+#     add_subtitle_to_video(video_path, subtitle_text, output_dir)
+#     ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#   File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels.py", line 23, in add_subtitle_to_video
+#     .run(overwrite_output=True)
+#      ~~~^^^^^^^^^^^^^^^^^^^^^^^
+#   File "C:\Users\USUARIO\AppData\Local\Programs\Python\Python313\Lib\site-packages\ffmpeg\_run.py", line 325, in run
+#     raise Error('ffmpeg', out, err)
+# ffmpeg._run.Error: ffmpeg error (see stderr output for detail)
