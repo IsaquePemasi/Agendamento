@@ -28,9 +28,20 @@ def add_subtitle_to_video(video_path, subtitle_text, output_dir):
     # Remover o arquivo temporário de legendas
     os.remove(subtitle_file)
 
+def process_videos_in_directory(input_dir, subtitle_text, output_dir):
+    # Verificar se o diretório de saída existe, caso contrário, criar
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    # Processar todos os arquivos .mp4 no diretório de entrada
+    for filename in os.listdir(input_dir):
+        if filename.endswith('.mp4'):
+            video_path = os.path.join(input_dir, filename)
+            add_subtitle_to_video(video_path, subtitle_text, output_dir)
+
 # Uso
-video_path = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\entrada\SophieRain.mp4'
+input_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\entrada'
 subtitle_text = 'Sua legenda aqui'
 output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
 
-add_subtitle_to_video(video_path, subtitle_text, output_dir)
+process_videos_in_directory(input_dir, subtitle_text, output_dir)
