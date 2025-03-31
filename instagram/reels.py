@@ -60,3 +60,7 @@ output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
 
 process_videos_in_directory(input_dir, subtitles_dir, output_dir)
 
+#   File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 34
+#     .output(output_path, vcodec='copy', acodec='aac', map='0:v', map='1:a', map_metadata=-1, shortest=None)
+#                                                                  ^^^^^^^^^
+# SyntaxError: keyword argument repeated: map
