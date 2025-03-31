@@ -1,4 +1,5 @@
 import os
+import random
 import ffmpeg
 
 def add_subtitle_to_video(video_path, subtitle_text, output_dir):
@@ -28,20 +29,33 @@ def add_subtitle_to_video(video_path, subtitle_text, output_dir):
     # Remover o arquivo temporário de legendas
     os.remove(subtitle_file)
 
-def process_videos_in_directory(input_dir, subtitle_text, output_dir):
+def process_videos_in_directory(input_dir, subtitles_dir, output_dir):
     # Verificar se o diretório de saída existe, caso contrário, criar
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
+
+    # Obter todos os arquivos de legenda .txt no diretório de legendas
+    subtitle_files = [f for f in os.listdir(subtitles_dir) if f.endswith('.txt')]
 
     # Processar todos os arquivos .mp4 no diretório de entrada
     for filename in os.listdir(input_dir):
         if filename.endswith('.mp4'):
             video_path = os.path.join(input_dir, filename)
+            
+            # Selecionar um arquivo de legenda aleatório
+            selected_subtitle_file = random.choice(subtitle_files)
+            subtitle_path = os.path.join(subtitles_dir, selected_subtitle_file)
+            
+            # Ler o conteúdo do arquivo de legenda
+            with open(subtitle_path, 'r') as f:
+                subtitle_text = f.read()
+            
+            # Adicionar legenda ao vídeo
             add_subtitle_to_video(video_path, subtitle_text, output_dir)
 
 # Uso
 input_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\entrada'
-subtitle_text = 'Sua legenda aqui'
+subtitles_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\legendas'
 output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
 
-process_videos_in_directory(input_dir, subtitle_text, output_dir)
+process_videos_in_directory(input_dir, subtitles_dir, output_dir)
