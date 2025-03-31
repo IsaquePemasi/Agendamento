@@ -60,14 +60,3 @@ output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
 
 process_videos_in_directory(input_dir, subtitles_dir, output_dir)
 
-# Traceback (most recent call last):
-#   File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 81, in <module>
-#     process_videos_in_directory(input_dir, subtitles_dir, music_dir, output_dir)
-#     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#   File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 73, in process_videos_in_directory
-#     add_subtitle_and_music_to_video(video_path, subtitle_text, music_path, output_dir)
-#     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#   File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 31, in add_subtitle_and_music_to_video
-#     ffmpeg.input('temp_video.mp4').input(music_path).output(
-#     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-# AttributeError: 'FilterableStream' object has no attribute 'input'
