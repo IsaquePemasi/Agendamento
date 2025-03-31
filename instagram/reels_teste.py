@@ -27,15 +27,11 @@ def add_subtitle_and_music_to_video(video_path, subtitle_text, music_path, outpu
     ).run(overwrite_output=True)
 
     # Usar ffmpeg para adicionar a nova música ao vídeo
-    ffmpeg.input('temp_video.mp4').output(
-        output_path, 
-        vcodec='copy', 
-        acodec='aac', 
-        map='0:v', 
-        map='1:a', 
-        map_metadata=-1, 
-        shortest=None
-    ).input(music_path).run(overwrite_output=True)
+    ffmpeg.concat(
+        ffmpeg.input('temp_video.mp4').video,
+        ffmpeg.input(music_path).audio,
+        v=1, a=1
+    ).output(output_path, map_metadata=-1).run(overwrite_output=True)
 
     # Remover arquivos temporários
     os.remove(subtitle_file)
