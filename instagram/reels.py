@@ -60,3 +60,20 @@ output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
 
 process_videos_in_directory(input_dir, subtitles_dir, output_dir)
 
+# [AVFormatContext @ 000001c957cf55c0] Unable to choose an output format for 'True'; use a standard extension for the filename or specify the format manually.
+# [out#0 @ 000001c957cf5480] Error initializing the muxer for True: Invalid argument
+# Error opening output file True.
+# Error opening output files: Invalid argument
+# Traceback (most recent call last):
+#   File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 77, in <module>
+#     process_videos_in_directory(input_dir, subtitles_dir, music_dir, output_dir)
+#     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#   File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 69, in process_videos_in_directory
+#     add_subtitle_and_music_to_video(video_path, subtitle_text, music_path, output_dir)
+#     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#   File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 27, in add_subtitle_and_music_to_video
+#     ).run(overwrite_output=True)
+#       ~~~^^^^^^^^^^^^^^^^^^^^^^^
+#   File "C:\Users\USUARIO\AppData\Local\Programs\Python\Python313\Lib\site-packages\ffmpeg\_run.py", line 325, in run
+#     raise Error('ffmpeg', out, err)
+# ffmpeg._run.Error: ffmpeg error (see stderr output for detail)
