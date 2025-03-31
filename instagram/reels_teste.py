@@ -19,21 +19,23 @@ def add_subtitle_and_music_to_video(video_path, subtitle_text, music_path, outpu
     output_path = os.path.join(output_dir, video_filename)
 
     # Usar ffmpeg para adicionar legendas ao vídeo e remover música original
-    (
-        ffmpeg
-        .input(video_path)
-        .output('temp_video.mp4', vf='subtitles={}'.format(subtitle_file), map_metadata=-1, an=True)
-        .run(overwrite_output=True)
-    )
+    ffmpeg.input(video_path).output(
+        'temp_video.mp4', 
+        vf='subtitles={}'.format(subtitle_file), 
+        map_metadata=-1, 
+        an=True
+    ).run(overwrite_output=True)
 
     # Usar ffmpeg para adicionar a nova música ao vídeo
-    (
-        ffmpeg
-        .input('temp_video.mp4')
-        .input(music_path)
-        .output(output_path, vcodec='copy', acodec='aac', map='0:v', map='1:a', map_metadata=-1, shortest=None)
-        .run(overwrite_output=True)
-    )
+    ffmpeg.input('temp_video.mp4').output(
+        output_path, 
+        vcodec='copy', 
+        acodec='aac', 
+        map='0:v', 
+        map='1:a', 
+        map_metadata=-1, 
+        shortest=None
+    ).input(music_path).run(overwrite_output=True)
 
     # Remover arquivos temporários
     os.remove(subtitle_file)
