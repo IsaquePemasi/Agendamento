@@ -1224,25 +1224,25 @@ time.sleep(1)
 # Move o mouse para a posição (x, y) na tela
 pyautogui.moveTo(x1, y1, duration = 1)
 # Realiza um clique na posição atual do mouse
-# pyautogui.click()
-# # Espera o tempo minimo
-# time.sleep(tempo_medio)
-# # Move o mouse para a posição (x, y) na tela
-# pyautogui.moveTo(xAgendamento, yAgendamento, duration = 1)
-# # Realiza um clique na posição atual do mouse
-# pyautogui.click()
-# # Espera o tempo minimo
-# time.sleep(tempo_minimo)
-# # Executa a função script_definitivo_click
-# script_definitivo_click()
-# # Espera o tempo minimo
-# time.sleep(tempo_minimo)
-# # Move o mouse para a posição (x, y) na tela
-# pyautogui.moveTo(xVoltar, yVoltar, duration = 1)
-# # Realiza um clique na posição atual do mouse
-# pyautogui.click()
-# # Realiza um clique na posição atual do mouse
-# pyautogui.click()
+pyautogui.click()
+# Espera o tempo minimo
+time.sleep(tempo_medio)
+# Move o mouse para a posição (x, y) na tela
+pyautogui.moveTo(xAgendamento, yAgendamento, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Espera o tempo minimo
+time.sleep(tempo_minimo)
+# Executa a função script_definitivo_click
+script_definitivo_click()
+# Espera o tempo minimo
+time.sleep(tempo_minimo)
+# Move o mouse para a posição (x, y) na tela
+pyautogui.moveTo(xVoltar, yVoltar, duration = 1)
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
+# Realiza um clique na posição atual do mouse
+pyautogui.click()
 ###################################################################################################
 # Mova o ponteiro do mouse para o ponto central
 pyautogui.moveTo(x_central, y_central, duration = 1)
