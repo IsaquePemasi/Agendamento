@@ -10,7 +10,7 @@ def generate_srt(subtitle_texts, video_duration):
         srt_content.append(f"{i}\n00:00:00,000 --> {int(video_duration // 3600):02}:{int((video_duration % 3600) // 60):02}:{int(video_duration % 60):02},000\n{text}\n")
     return "\n".join(srt_content)
 
-def add_subtitle_to_video(video_path, subtitle_texts, output_dir):
+def add_subtitle_to_video(video_path, subtitle_texts, watermark_text, output_dir):
     # Obter a duração do vídeo
     probe = ffmpeg.probe(video_path)
     video_duration = float(probe['format']['duration'])
@@ -27,18 +27,21 @@ def add_subtitle_to_video(video_path, subtitle_texts, output_dir):
     # Criar o caminho completo do arquivo de saída
     output_path = os.path.join(output_dir, video_filename)
 
-    # Usar ffmpeg para adicionar legendas ao vídeo
+    # Filtros de texto para adicionar legendas e marca d'água
+    subtitle_lines = f"subtitles={subtitle_file},drawtext=text='{watermark_text}':fontcolor=white:fontsize=24:alpha=0.5:x=(w-text_w)/2:y=(h-text_h)/2:enable='between(t,0,{video_duration})'"
+
+    # Usar ffmpeg para adicionar legendas e marca d'água ao vídeo
     (
         ffmpeg
         .input(video_path)
-        .output(output_path, vf='subtitles={}'.format(subtitle_file))
+        .output(output_path, vf=subtitle_lines)
         .run(overwrite_output=True)
     )
 
     # Remover o arquivo temporário de legendas
     os.remove(subtitle_file)
 
-def process_videos_in_directory(input_dir, subtitles_dir, output_dir):
+def process_videos_in_directory(input_dir, subtitles_dir, output_dir, watermark_text):
     # Verificar se o diretório de saída existe, caso contrário, criar
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
@@ -59,12 +62,13 @@ def process_videos_in_directory(input_dir, subtitles_dir, output_dir):
             with open(subtitle_path, 'r') as f:
                 subtitle_texts = f.read().splitlines()
             
-            # Adicionar legenda ao vídeo
-            add_subtitle_to_video(video_path, subtitle_texts, output_dir)
+            # Adicionar legenda e marca d'água ao vídeo
+            add_subtitle_to_video(video_path, subtitle_texts, watermark_text, output_dir)
 
 # Uso
 input_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\entrada'
 subtitles_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\legendas'
 output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
+watermark_text = '@SeuPerfilInstagram'
 
-process_videos_in_directory(input_dir, subtitles_dir, output_dir)
+process_videos_in_directory(input_dir, subtitles_dir, output_dir, watermark_text)

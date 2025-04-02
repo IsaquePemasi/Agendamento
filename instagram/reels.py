@@ -2,15 +2,24 @@ import os
 import random
 import ffmpeg
 
-def add_subtitle_to_video(video_path, subtitle_text, output_dir):
+def generate_srt(subtitle_texts, video_duration):
+    srt_content = []
+    for i, text in enumerate(subtitle_texts, start=1):
+        start_time = 0
+        end_time = video_duration
+        srt_content.append(f"{i}\n00:00:00,000 --> {int(video_duration // 3600):02}:{int((video_duration % 3600) // 60):02}:{int(video_duration % 60):02},000\n{text}\n")
+    return "\n".join(srt_content)
+
+def add_subtitle_to_video(video_path, subtitle_texts, output_dir):
     # Obter a duração do vídeo
     probe = ffmpeg.probe(video_path)
     video_duration = float(probe['format']['duration'])
 
     # Temporário: criar um arquivo de legendas SRT
     subtitle_file = 'temp_subtitle.srt'
+    srt_content = generate_srt(subtitle_texts, video_duration)
     with open(subtitle_file, 'w') as f:
-        f.write(f"1\n00:00:00,000 --> {int(video_duration // 3600):02}:{int((video_duration % 3600) // 60):02}:{int(video_duration % 60):02},000\n{subtitle_text}\n")
+        f.write(srt_content)
 
     # Obter o nome do arquivo de vídeo de entrada
     video_filename = os.path.basename(video_path)
@@ -48,10 +57,10 @@ def process_videos_in_directory(input_dir, subtitles_dir, output_dir):
             
             # Ler o conteúdo do arquivo de legenda
             with open(subtitle_path, 'r') as f:
-                subtitle_text = f.read()
+                subtitle_texts = f.read().splitlines()
             
             # Adicionar legenda ao vídeo
-            add_subtitle_to_video(video_path, subtitle_text, output_dir)
+            add_subtitle_to_video(video_path, subtitle_texts, output_dir)
 
 # Uso
 input_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\entrada'
@@ -59,4 +68,3 @@ subtitles_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\legendas'
 output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
 
 process_videos_in_directory(input_dir, subtitles_dir, output_dir)
-
