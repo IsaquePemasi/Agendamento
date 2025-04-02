@@ -95,3 +95,8 @@ instagram_file = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\instagram.txt'
 output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
 
 process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output_dir)
+
+  File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 85
+    with open(subtitle_path, 'r', encoding='utf-8') as f):
+                                                        ^
+SyntaxError: unmatched ')'
