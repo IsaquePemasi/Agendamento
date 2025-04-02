@@ -2,30 +2,33 @@ import os
 import random
 import ffmpeg
 
-def generate_srt(subtitle_texts, video_duration, middle_text):
+def generate_srt(subtitle_texts, video_duration):
     srt_content = []
     for i, text in enumerate(subtitle_texts, start=1):
         start_time = 0
         end_time = video_duration
         srt_content.append(f"{i}\n00:00:00,000 --> {int(video_duration // 3600):02}:{int((video_duration % 3600) // 60):02}:{int(video_duration % 60):02},000\n{text}\n")
-
-    # Adicionar a legenda centralizada no meio do vídeo
-    middle_start = int(video_duration // 2)
-    middle_end = middle_start + 5  # Duração de 5 segundos
-    srt_content.append(f"{len(subtitle_texts) + 1}\n{int(middle_start // 3600):02}:{int((middle_start % 3600) // 60):02}:{int(middle_start % 60):02},000 --> {int(middle_end // 3600):02}:{int((middle_end % 3600) // 60):02}:{int(middle_end % 60):02},000\n{middle_text}\n")
-
     return "\n".join(srt_content)
+
+def generate_instagram_srt(video_duration, middle_text):
+    return f"1\n00:00:00,000 --> {int(video_duration // 3600):02}:{int((video_duration % 3600) // 60):02}:{int(video_duration % 60):02},000\n{middle_text}\n"
 
 def add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir):
     # Obter a duração do vídeo
     probe = ffmpeg.probe(video_path)
     video_duration = float(probe['format']['duration'])
 
-    # Temporário: criar um arquivo de legendas SRT
+    # Temporário: criar arquivos de legendas SRT
     subtitle_file = 'temp_subtitle.srt'
-    srt_content = generate_srt(subtitle_texts, video_duration, middle_text)
+    instagram_subtitle_file = 'temp_instagram_subtitle.srt'
+
+    srt_content = generate_srt(subtitle_texts, video_duration)
     with open(subtitle_file, 'w', encoding='utf-8') as f:
         f.write(srt_content)
+
+    instagram_srt_content = generate_instagram_srt(video_duration, middle_text)
+    with open(instagram_subtitle_file, 'w', encoding='utf-8') as f:
+        f.write(instagram_srt_content)
 
     # Obter o nome do arquivo de vídeo de entrada
     video_filename = os.path.basename(video_path)
@@ -37,12 +40,15 @@ def add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir):
     (
         ffmpeg
         .input(video_path)
-        .output(output_path, vf='subtitles={}'.format(subtitle_file))
+        .filter('subtitles', subtitle_file)
+        .filter('subtitles', instagram_subtitle_file, force_style='Alignment=8')  # Alinha as legendas ao topo
+        .output(output_path)
         .run(overwrite_output=True)
     )
 
-    # Remover o arquivo temporário de legendas
+    # Remover os arquivos temporários de legendas
     os.remove(subtitle_file)
+    os.remove(instagram_subtitle_file)
 
 def process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output_dir):
     # Verificar se o diretório de saída existe, caso contrário, criar

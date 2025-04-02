@@ -41,7 +41,7 @@ def add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir):
         ffmpeg
         .input(video_path)
         .filter('subtitles', subtitle_file)
-        .filter('subtitles', instagram_subtitle_file, force_style='Alignment=8')  # Alinha as legendas ao topo
+        .filter('subtitles', instagram_subtitle_file, force_style='Alignment=8,Fontsize=24,OutlineColour=&H80000000,Shadow=1')  # Alinha as legendas ao topo central
         .output(output_path)
         .run(overwrite_output=True)
     )
