@@ -36,12 +36,13 @@ def add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir):
     # Criar o caminho completo do arquivo de saída
     output_path = os.path.join(output_dir, video_filename)
 
-    # Usar ffmpeg para adicionar legendas ao vídeo
+    # Usar ffmpeg para adicionar legendas e borda ao vídeo
     (
         ffmpeg
         .input(video_path)
         .filter('subtitles', subtitle_file)
         .filter('subtitles', instagram_subtitle_file, force_style='Alignment=6,PrimaryColour=&HC0FFFFFF,Fontname=NotoColorEmoji')  # Alinha as legendas ao topo central, define cor transparente e especifica fonte que suporta emojis
+        .filter('drawbox', x=0, y=0, width='iw', height='ih', color='white@0.5', thickness=10)  # Adicionar borda branca semi-transparente
         .output(output_path)
         .run(overwrite_output=True)
     )
@@ -75,7 +76,7 @@ def process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output
             with open(subtitle_path, 'r', encoding='utf-8') as f:
                 subtitle_texts = f.read().splitlines()
             
-            # Adicionar legenda ao vídeo
+            # Adicionar legenda e borda ao vídeo
             add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir)
 
 # Uso
