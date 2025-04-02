@@ -75,7 +75,7 @@ def process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output
 # Uso
 input_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\entrada'
 subtitles_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\legendas'
-instagram_file = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\Instagram.txt'
+instagram_file = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\instagram.txt'
 output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
 
 process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output_dir)
