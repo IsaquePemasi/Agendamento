@@ -75,7 +75,19 @@ def process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output
 # Uso
 input_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\entrada'
 subtitles_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\legendas'
-instagram_file = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\Instagram.txt'
+instagram_file = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\legendas\Instagram.txt'
 output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
 
 process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output_dir)
+
+Traceback (most recent call last):
+  File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 81, in <module>
+    process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output_dir)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 70, in process_videos_in_directory
+    subtitle_texts = f.read().splitlines()
+                     ~~~~~~^^
+  File "C:\Users\USUARIO\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 26: character maps to <undefined>
