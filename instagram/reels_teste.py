@@ -9,10 +9,8 @@ def generate_srt(subtitle_texts, video_duration, middle_text):
         end_time = video_duration
         srt_content.append(f"{i}\n00:00:00,000 --> {int(video_duration // 3600):02}:{int((video_duration % 3600) // 60):02}:{int(video_duration % 60):02},000\n{text}\n")
 
-    # Adicionar a legenda centralizada no meio do vídeo
-    middle_start = int(video_duration // 2)
-    middle_end = middle_start + 5  # Duração de 5 segundos
-    srt_content.append(f"{len(subtitle_texts) + 1}\n{int(middle_start // 3600):02}:{int((middle_start % 3600) // 60):02}:{int(middle_start % 60):02},000 --> {int(middle_end // 3600):02}:{int((middle_end % 3600) // 60):02}:{int(middle_end % 60):02},000\n{middle_text}\n")
+    # Adicionar a legenda centralizada durante todo o vídeo
+    srt_content.append(f"{len(subtitle_texts) + 1}\n00:00:00,000 --> {int(video_duration // 3600):02}:{int((video_duration % 3600) // 60):02}:{int(video_duration % 60):02},000\n{middle_text}\n")
 
     return "\n".join(srt_content)
 
@@ -37,7 +35,7 @@ def add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir):
     (
         ffmpeg
         .input(video_path)
-        .output(output_path, vf='subtitles={}'.format(subtitle_file))
+        .output(output_path, vf='subtitles={},force_style=\'Alignment=2\''.format(subtitle_file))
         .run(overwrite_output=True)
     )
 
@@ -75,7 +73,7 @@ def process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output
 # Uso
 input_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\entrada'
 subtitles_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\legendas'
-instagram_file = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\instagram.txt'
+instagram_file = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\Instagram.txt'
 output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
 
 process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output_dir)
