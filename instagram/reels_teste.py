@@ -36,12 +36,11 @@ def add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir):
     # Criar o caminho completo do arquivo de saída
     output_path = os.path.join(output_dir, video_filename)
 
-    # Definir cores aleatórias para as bordas
-    colors = ['red', 'green', 'blue', 'yellow', 'purple', 'cyan', 'magenta', 'orange']
-    top_color = random.choice(colors) + '@0.5'
-    bottom_color = random.choice(colors) + '@0.5'
-    left_color = random.choice(colors) + '@0.5'
-    right_color = random.choice(colors) + '@0.5'
+    # Definir cores harmoniosas para as bordas
+    top_color = 'red'
+    bottom_color = 'yellow'
+    left_color = 'green'
+    right_color = 'blue'
 
     # Usar ffmpeg para adicionar legendas e bordas ao vídeo
     (
