@@ -40,8 +40,8 @@ def add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir):
     (
         ffmpeg
         .input(video_path)
-        .filter('subtitles', subtitle_file)
-        .filter('subtitles', instagram_subtitle_file, force_style='Alignment=6,PrimaryColour=&HC0FFFFFF')  # Alinha as legendas ao topo central e define cor transparente
+        .filter('subtitles', subtitle_file, force_style='FontName=Impact,PrimaryColour=&H00FFFFFF')  # Adiciona a fonte Impact e cor branca às legendas principais
+        .filter('subtitles', instagram_subtitle_file, force_style='Alignment=6,FontName=Impact,PrimaryColour=&HC0FFFFFF')  # Alinha as legendas ao topo central, adiciona a fonte Impact e define cor transparente
         .output(output_path)
         .run(overwrite_output=True)
     )
