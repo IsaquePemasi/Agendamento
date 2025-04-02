@@ -42,7 +42,7 @@ def add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir):
         .input(video_path)
         .filter('subtitles', subtitle_file)
         .filter('subtitles', instagram_subtitle_file, force_style='Alignment=6,PrimaryColour=&HC0FFFFFF,Fontname=NotoColorEmoji')  # Alinha as legendas ao topo central, define cor transparente e especifica fonte que suporta emojis
-        .filter('drawbox', x=0, y=0, width='iw', height='ih', color='white@0.5', thickness=10)  # Adicionar borda branca semi-transparente
+        .filter('drawbox', x=0, y=0, width='iw', height='ih', color='red@0.5', thickness=20)  # Adicionar borda colorida (vermelha) semi-transparente
         .output(output_path)
         .run(overwrite_output=True)
     )
