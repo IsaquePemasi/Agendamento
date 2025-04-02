@@ -2,12 +2,16 @@ import os
 import random
 import ffmpeg
 
-def generate_srt(subtitle_texts, video_duration):
+def generate_srt(subtitle_texts, video_duration, middle_text):
     srt_content = []
     for i, text in enumerate(subtitle_texts, start=1):
         start_time = 0
         end_time = video_duration
         srt_content.append(f"{i}\n00:00:00,000 --> {int(video_duration // 3600):02}:{int((video_duration % 3600) // 60):02}:{int(video_duration % 60):02},000\n{text}\n")
+
+    # Adicionar a legenda do Instagram.txt centralizada no início do vídeo e presente durante todo o vídeo
+    srt_content.append(f"{len(subtitle_texts) + 1}\n00:00:00,000 --> {int(video_duration // 3600):02}:{int((video_duration % 3600) // 60):02}:{int(video_duration % 60):02},000\n{middle_text}\n")
+
     return "\n".join(srt_content)
 
 def add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir):
@@ -17,7 +21,7 @@ def add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir):
 
     # Temporário: criar um arquivo de legendas SRT
     subtitle_file = 'temp_subtitle.srt'
-    srt_content = generate_srt(subtitle_texts, video_duration)
+    srt_content = generate_srt(subtitle_texts, video_duration, middle_text)
     with open(subtitle_file, 'w', encoding='utf-8') as f:
         f.write(srt_content)
 
@@ -27,17 +31,11 @@ def add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir):
     # Criar o caminho completo do arquivo de saída
     output_path = os.path.join(output_dir, video_filename)
 
-    # Adicionar as legendas e o texto centralizado ao vídeo
+    # Usar ffmpeg para adicionar legendas ao vídeo
     (
         ffmpeg
         .input(video_path)
-        .output(
-            output_path,
-            vf=[
-                f"subtitles={subtitle_file}",
-                f"drawtext=textfile={middle_text}:fontcolor=white:fontsize=24:x=(w-text_w)/2:y=(h-text_h)/2"
-            ]
-        )
+        .output(output_path, vf='subtitles={}:force_style=\'Alignment=2\''.format(subtitle_file))  # Alinha as legendas ao centro
         .run(overwrite_output=True)
     )
 
@@ -56,11 +54,6 @@ def process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output
     with open(instagram_file, 'r', encoding='utf-8') as f:
         middle_text = f.read().strip()
 
-    # Salvar o texto do Instagram em um arquivo temporário
-    middle_text_file = 'middle_text.txt'
-    with open(middle_text_file, 'w', encoding='utf-8') as f:
-        f.write(middle_text)
-
     # Processar todos os arquivos .mp4 no diretório de entrada
     for filename in os.listdir(input_dir):
         if filename.endswith('.mp4'):
@@ -75,10 +68,7 @@ def process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output
                 subtitle_texts = f.read().splitlines()
             
             # Adicionar legenda ao vídeo
-            add_subtitle_to_video(video_path, subtitle_texts, middle_text_file, output_dir)
-
-    # Remover o arquivo temporário de texto do Instagram
-    os.remove(middle_text_file)
+            add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir)
 
 # Uso
 input_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\entrada'
