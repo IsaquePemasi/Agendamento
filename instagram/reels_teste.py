@@ -9,7 +9,7 @@ def generate_srt(subtitle_texts, video_duration, middle_text):
         end_time = video_duration
         srt_content.append(f"{i}\n00:00:00,000 --> {int(video_duration // 3600):02}:{int((video_duration % 3600) // 60):02}:{int(video_duration % 60):02},000\n{text}\n")
 
-    # Adicionar a legenda do Instagram.txt centralizada no início do vídeo e presente durante todo o vídeo
+    # Adicionar a legenda do Instagram.txt no início do vídeo e presente durante todo o vídeo
     srt_content.append(f"{len(subtitle_texts) + 1}\n00:00:00,000 --> {int(video_duration // 3600):02}:{int((video_duration % 3600) // 60):02}:{int(video_duration % 60):02},000\n{middle_text}\n")
 
     return "\n".join(srt_content)
@@ -35,7 +35,7 @@ def add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir):
     (
         ffmpeg
         .input(video_path)
-        .output(output_path, vf='subtitles={}:force_style=\'Alignment=2\''.format(subtitle_file))  # Alinha as legendas ao centro
+        .output(output_path, vf='subtitles={}:force_style=\'Alignment=6\''.format(subtitle_file))  # Alinha as legendas ao topo
         .run(overwrite_output=True)
     )
 
