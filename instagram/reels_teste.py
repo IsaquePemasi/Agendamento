@@ -41,7 +41,7 @@ def add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir):
         ffmpeg
         .input(video_path)
         .filter('subtitles', subtitle_file)
-        .filter('subtitles', instagram_subtitle_file, force_style='Alignment=6,PrimaryColour=&HC0FFFFFF')  # Alinha as legendas ao topo central e define cor transparente
+        .filter('subtitles', instagram_subtitle_file, force_style='Alignment=6,PrimaryColour=&HC0FFFFFF,FontName=Noto Color Emoji')  # Alinha as legendas ao topo central, define cor transparente e especifica fonte que suporta emojis
         .output(output_path)
         .run(overwrite_output=True)
     )
