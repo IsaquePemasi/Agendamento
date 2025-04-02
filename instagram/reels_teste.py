@@ -30,7 +30,7 @@ def add_subtitle_to_video(video_path, subtitle_texts, watermark_text, output_dir
 
         # Filtros de texto para adicionar legendas e marca d'água
         subtitle_filter = f"subtitles={subtitle_file}"
-        watermark_filter = f"drawtext=text='{watermark_text}':fontcolor=white:fontsize=24:alpha=0.5:x=(w-text_w)/2:y=(h-text_h)/2:enable='between(t,0,{video_duration})'"
+        watermark_filter = f"drawtext=text='{watermark_text}':fontcolor=white:fontsize=24:alpha=0.5:x=(w-text_w)/2:y=(h-text_h)/2:fontfile=/path/to/font.ttf:enable='between(t,0,{video_duration})'"
 
         # Usar ffmpeg para adicionar legendas e marca d'água ao vídeo
         (
@@ -47,7 +47,10 @@ def add_subtitle_to_video(video_path, subtitle_texts, watermark_text, output_dir
 
     except ffmpeg.Error as e:
         print(f"Erro ao processar o vídeo: {e}")
-        print(f"Saída de erro do ffmpeg: {e.stderr.decode('utf8')}")
+        if e.stderr:
+            print(f"Saída de erro do ffmpeg: {e.stderr.decode('utf8')}")
+        else:
+            print("Erro sem detalhes fornecidos pelo ffmpeg.")
 
 def process_videos_in_directory(input_dir, subtitles_dir, output_dir, watermark_text):
     # Verificar se o diretório de saída existe, caso contrário, criar
@@ -80,27 +83,3 @@ output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
 watermark_text = '@SeuPerfilInstagram'
 
 process_videos_in_directory(input_dir, subtitles_dir, output_dir, watermark_text)
-
-Fontconfig error: Cannot load default config file: No such file: (null)
-Erro ao processar o vídeo: ffmpeg error (see stderr output for detail)
-Traceback (most recent call last):
-  File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 40, in add_subtitle_to_video
-    .run(overwrite_output=True)
-     ~~~^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\USUARIO\AppData\Local\Programs\Python\Python313\Lib\site-packages\ffmpeg\_run.py", line 325, in run
-    raise Error('ffmpeg', out, err)
-ffmpeg._run.Error: ffmpeg error (see stderr output for detail)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 82, in <module>
-    process_videos_in_directory(input_dir, subtitles_dir, output_dir, watermark_text)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 74, in process_videos_in_directory
-    add_subtitle_to_video(video_path, subtitle_texts, watermark_text, output_dir)
-    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 50, in add_subtitle_to_video
-    print(f"Saída de erro do ffmpeg: {e.stderr.decode('utf8')}")
-                                      ^^^^^^^^^^^^^^^
-AttributeError: 'NoneType' object has no attribute 'decode'
