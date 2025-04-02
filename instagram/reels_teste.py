@@ -11,35 +11,43 @@ def generate_srt(subtitle_texts, video_duration):
     return "\n".join(srt_content)
 
 def add_subtitle_to_video(video_path, subtitle_texts, watermark_text, output_dir):
-    # Obter a duração do vídeo
-    probe = ffmpeg.probe(video_path)
-    video_duration = float(probe['format']['duration'])
+    try:
+        # Obter a duração do vídeo
+        probe = ffmpeg.probe(video_path)
+        video_duration = float(probe['format']['duration'])
 
-    # Temporário: criar um arquivo de legendas SRT
-    subtitle_file = 'temp_subtitle.srt'
-    srt_content = generate_srt(subtitle_texts, video_duration)
-    with open(subtitle_file, 'w') as f:
-        f.write(srt_content)
+        # Temporário: criar um arquivo de legendas SRT
+        subtitle_file = 'temp_subtitle.srt'
+        srt_content = generate_srt(subtitle_texts, video_duration)
+        with open(subtitle_file, 'w') as f:
+            f.write(srt_content)
 
-    # Obter o nome do arquivo de vídeo de entrada
-    video_filename = os.path.basename(video_path)
+        # Obter o nome do arquivo de vídeo de entrada
+        video_filename = os.path.basename(video_path)
 
-    # Criar o caminho completo do arquivo de saída
-    output_path = os.path.join(output_dir, video_filename)
+        # Criar o caminho completo do arquivo de saída
+        output_path = os.path.join(output_dir, video_filename)
 
-    # Filtros de texto para adicionar legendas e marca d'água
-    subtitle_lines = f"subtitles={subtitle_file},drawtext=text='{watermark_text}':fontcolor=white:fontsize=24:alpha=0.5:x=(w-text_w)/2:y=(h-text_h)/2:enable='between(t,0,{video_duration})'"
+        # Filtros de texto para adicionar legendas e marca d'água
+        subtitle_filter = f"subtitles={subtitle_file}"
+        watermark_filter = f"drawtext=text='{watermark_text}':fontcolor=white:fontsize=24:alpha=0.5:x=(w-text_w)/2:y=(h-text_h)/2:enable='between(t,0,{video_duration})'"
 
-    # Usar ffmpeg para adicionar legendas e marca d'água ao vídeo
-    (
-        ffmpeg
-        .input(video_path)
-        .output(output_path, vf=subtitle_lines)
-        .run(overwrite_output=True)
-    )
+        # Usar ffmpeg para adicionar legendas e marca d'água ao vídeo
+        (
+            ffmpeg
+            .input(video_path)
+            .output(output_path, vf=f"{subtitle_filter},{watermark_filter}")
+            .run(overwrite_output=True)
+        )
 
-    # Remover o arquivo temporário de legendas
-    os.remove(subtitle_file)
+        print(f"Vídeo salvo com sucesso em {output_path}")
+
+        # Remover o arquivo temporário de legendas
+        os.remove(subtitle_file)
+
+    except ffmpeg.Error as e:
+        print(f"Erro ao processar o vídeo: {e}")
+        print(f"Saída de erro do ffmpeg: {e.stderr.decode('utf8')}")
 
 def process_videos_in_directory(input_dir, subtitles_dir, output_dir, watermark_text):
     # Verificar se o diretório de saída existe, caso contrário, criar
