@@ -82,7 +82,7 @@ def process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output
             subtitle_path = os.path.join(subtitles_dir, selected_subtitle_file)
             
             # Ler o conteúdo do arquivo de legenda
-            with open(subtitle_path, 'r', encoding='utf-8') as f):
+            with open(subtitle_path, 'r', encoding='utf-8') as f:
                 subtitle_texts = f.read().splitlines()
             
             # Adicionar legenda e borda ao vídeo
@@ -95,8 +95,3 @@ instagram_file = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\instagram.txt'
 output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
 
 process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output_dir)
-
-  File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 85
-    with open(subtitle_path, 'r', encoding='utf-8') as f):
-                                                        ^
-SyntaxError: unmatched ')'
