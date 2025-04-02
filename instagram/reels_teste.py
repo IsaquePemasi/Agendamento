@@ -36,13 +36,23 @@ def add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir):
     # Criar o caminho completo do arquivo de saída
     output_path = os.path.join(output_dir, video_filename)
 
-    # Usar ffmpeg para adicionar legendas e borda ao vídeo
+    # Definir cores aleatórias para as bordas
+    colors = ['red', 'green', 'blue', 'yellow', 'purple', 'cyan', 'magenta', 'orange']
+    top_color = random.choice(colors) + '@0.5'
+    bottom_color = random.choice(colors) + '@0.5'
+    left_color = random.choice(colors) + '@0.5'
+    right_color = random.choice(colors) + '@0.5'
+
+    # Usar ffmpeg para adicionar legendas e bordas ao vídeo
     (
         ffmpeg
         .input(video_path)
         .filter('subtitles', subtitle_file)
         .filter('subtitles', instagram_subtitle_file, force_style='Alignment=6,PrimaryColour=&HC0FFFFFF,Fontname=NotoColorEmoji')  # Alinha as legendas ao topo central, define cor transparente e especifica fonte que suporta emojis
-        .filter('drawbox', x=0, y=0, width='iw', height='ih', color='red@0.5', thickness=20)  # Adicionar borda colorida (vermelha) semi-transparente
+        .filter('drawbox', x=0, y=0, width='iw', height=20, color=top_color, thickness=20)  # Borda superior
+        .filter('drawbox', x=0, y='ih-20', width='iw', height=20, color=bottom_color, thickness=20)  # Borda inferior
+        .filter('drawbox', x=0, y=0, width=20, height='ih', color=left_color, thickness=20)  # Borda esquerda
+        .filter('drawbox', x='iw-20', y=0, width=20, height='ih', color=right_color, thickness=20)  # Borda direita
         .output(output_path)
         .run(overwrite_output=True)
     )
