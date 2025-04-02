@@ -48,10 +48,10 @@ def add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir):
         .input(video_path)
         .filter('subtitles', subtitle_file)
         .filter('subtitles', instagram_subtitle_file, force_style='Alignment=6,PrimaryColour=&HC0FFFFFF,Fontname=NotoColorEmoji')  # Alinha as legendas ao topo central, define cor transparente e especifica fonte que suporta emojis
-        .filter('drawbox', x=0, y=0, width='iw', height=20, color=top_color, thickness=20)  # Borda superior
-        .filter('drawbox', x=0, y='ih-20', width='iw', height=20, color=bottom_color, thickness=20)  # Borda inferior
-        .filter('drawbox', x=0, y=0, width=20, height='ih', color=left_color, thickness=20)  # Borda esquerda
-        .filter('drawbox', x='iw-20', y=0, width=20, height='ih', color=right_color, thickness=20)  # Borda direita
+        .filter('drawbox', x=0, y=0, width='iw', height=10, color=top_color, thickness=10)  # Borda superior
+        .filter('drawbox', x=0, y='ih-10', width='iw', height=10, color=bottom_color, thickness=10)  # Borda inferior
+        .filter('drawbox', x=0, y=0, width=10, height='ih', color=left_color, thickness=10)  # Borda esquerda
+        .filter('drawbox', x='iw-10', y=0, width=10, height='ih', color=right_color, thickness=10)  # Borda direita
         .output(output_path)
         .run(overwrite_output=True)
     )
