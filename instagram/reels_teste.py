@@ -73,7 +73,25 @@ def process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output
 # Uso
 input_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\entrada'
 subtitles_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\legendas'
-instagram_file = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\Instagram.txt'
+instagram_file = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\instagram.txt'
 output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
 
 process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output_dir)
+
+
+[AVFilterGraph @ 000001c705f7e800] No such filter: 'force_style'
+Error opening output file C:\Users\USUARIO\Desktop\Agendamento\instagram\saida\Sophie Rain Hot 🔥 🥵 😍 ｜ #shorts #bikini #trending.mp4.
+Error opening output files: Filter not found
+Traceback (most recent call last):
+  File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 79, in <module>
+    process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output_dir)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 71, in process_videos_in_directory
+    add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 39, in add_subtitle_to_video
+    .run(overwrite_output=True)
+     ~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USUARIO\AppData\Local\Programs\Python\Python313\Lib\site-packages\ffmpeg\_run.py", line 325, in run
+    raise Error('ffmpeg', out, err)
+ffmpeg._run.Error: ffmpeg error (see stderr output for detail)
