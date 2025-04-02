@@ -24,7 +24,7 @@ def add_subtitle_to_video(video_path, subtitle_texts, middle_text, output_dir):
     # Temporário: criar um arquivo de legendas SRT
     subtitle_file = 'temp_subtitle.srt'
     srt_content = generate_srt(subtitle_texts, video_duration, middle_text)
-    with open(subtitle_file, 'w') as f:
+    with open(subtitle_file, 'w', encoding='utf-8') as f:
         f.write(srt_content)
 
     # Obter o nome do arquivo de vídeo de entrada
@@ -53,7 +53,7 @@ def process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output
     subtitle_files = [f for f in os.listdir(subtitles_dir) if f.endswith('.txt')]
 
     # Ler o conteúdo do arquivo Instagram.txt
-    with open(instagram_file, 'r') as f:
+    with open(instagram_file, 'r', encoding='utf-8') as f:
         middle_text = f.read().strip()
 
     # Processar todos os arquivos .mp4 no diretório de entrada
@@ -66,7 +66,7 @@ def process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output
             subtitle_path = os.path.join(subtitles_dir, selected_subtitle_file)
             
             # Ler o conteúdo do arquivo de legenda
-            with open(subtitle_path, 'r') as f:
+            with open(subtitle_path, 'r', encoding='utf-8') as f:
                 subtitle_texts = f.read().splitlines()
             
             # Adicionar legenda ao vídeo
@@ -75,19 +75,7 @@ def process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output
 # Uso
 input_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\entrada'
 subtitles_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\legendas'
-instagram_file = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\legendas\Instagram.txt'
+instagram_file = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\Instagram.txt'
 output_dir = r'C:\Users\USUARIO\Desktop\Agendamento\instagram\saida'
 
 process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output_dir)
-
-Traceback (most recent call last):
-  File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 81, in <module>
-    process_videos_in_directory(input_dir, subtitles_dir, instagram_file, output_dir)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\USUARIO\Desktop\Agendamento\instagram\reels_teste.py", line 70, in process_videos_in_directory
-    subtitle_texts = f.read().splitlines()
-                     ~~~~~~^^
-  File "C:\Users\USUARIO\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 23, in decode
-    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
-           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 26: character maps to <undefined>
