@@ -12,8 +12,10 @@ def remove_thumb_files(directory):
 
         # Itera sobre os arquivos
         for file in files:
-            # Verifica se o arquivo termina com "thumb"
-            if file.endswith("thumb"):
+            # Separa o nome do arquivo e a extensão
+            filename, file_extension = os.path.splitext(file)
+            # Verifica se o nome do arquivo termina com "thumb"
+            if filename.endswith("thumb"):
                 file_path = os.path.join(directory, file)
                 # Remove o arquivo
                 os.remove(file_path)
