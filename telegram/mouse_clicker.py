@@ -1,26 +1,29 @@
-import pyautogui
-import time
+import os
 
-def main():
+def remove_thumb_files(directory):
     try:
-        # Pergunta quantas vezes o usuário quer clicar
-        num_clicks = int(input("Quantas vezes você quer que o botão esquerdo do mouse clique? "))
-        
-        # Espera 3 segundos
-        print("Esperando 3 segundos...")
-        time.sleep(3)
-        
-        # Realiza os cliques
-        print(f"Clicando {num_clicks} vezes...")
-        for _ in range(num_clicks):
-            pyautogui.click()
-            time.sleep(0.1)  # Pequena pausa entre os cliques para evitar sobrecarregar o sistema
+        # Verifica se o diretório existe
+        if not os.path.exists(directory):
+            print(f"O diretório {directory} não existe.")
+            return
 
-        print("Terminado!")
-    except ValueError:
-        print("Por favor, insira um número válido.")
-    except KeyboardInterrupt:
-        print("\nOperação interrompida pelo usuário.")
+        # Lista todos os arquivos no diretório
+        files = os.listdir(directory)
 
-if __name__ == "__main__":
-    main()
+        # Itera sobre os arquivos
+        for file in files:
+            # Separa o nome do arquivo e a extensão
+            filename, file_extension = os.path.splitext(file)
+            # Verifica se o nome do arquivo termina com "thumb"
+            if filename.endswith("thumb"):
+                file_path = os.path.join(directory, file)
+                # Remove o arquivo
+                os.remove(file_path)
+                print(f"Arquivo removido: {file_path}")
+
+    except Exception as e:
+        print(f"Ocorreu um erro: {e}")
+
+# Substitua 'seu_diretorio' pelo caminho do diretório onde deseja remover os arquivos
+seu_diretorio = 'seu_diretorio'
+remove_thumb_files(seu_diretorio)
