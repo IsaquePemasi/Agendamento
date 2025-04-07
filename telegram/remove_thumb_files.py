@@ -25,5 +25,5 @@ def remove_thumb_files(directory):
         print(f"Ocorreu um erro: {e}")
 
 # Substitua 'seu_diretorio' pelo caminho do diretório onde deseja remover os arquivos
-seu_diretorio = 'seu_diretorio'
+seu_diretorio = r"C:\Users\USUARIO\Desktop\TransVIP2\photos"
 remove_thumb_files(seu_diretorio)
