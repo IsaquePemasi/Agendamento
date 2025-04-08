@@ -47,15 +47,15 @@ arquivosB = [
     r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\suporte.py",
     r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\winry.py",
     r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\yoruichi.py",
-    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\yuno.py"
-    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\edward.py"
-    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\eren.py"
-    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\hinata.py"
-    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\ichigo.py"
-    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\isabel.py"
-    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\misato.py"
-    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\nami.py"
-    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\tenten.py"
+    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\yuno.py",
+    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\edward.py",
+    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\eren.py",
+    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\hinata.py",
+    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\ichigo.py",
+    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\isabel.py",
+    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\misato.py",
+    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\nami.py",
+    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\tenten.py",
     r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA\tsunade.py"    
 ]
 
