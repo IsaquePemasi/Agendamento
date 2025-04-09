@@ -1229,7 +1229,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_medio)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(xAgendamentoDireita, yAgendamentoDireita, duration = 1)
+pyautogui.moveTo(xAgendamento, yAgendamento, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Espera o tempo minimo
@@ -1261,7 +1261,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_medio)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(xAgendamentoDireita, yAgendamentoDireita, duration = 1)
+pyautogui.moveTo(xAgendamento, yAgendamento, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Espera o tempo minimo
@@ -1293,7 +1293,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_medio)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(xAgendamentoDireita, yAgendamentoDireita, duration = 1)
+pyautogui.moveTo(xAgendamento, yAgendamento, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Espera o tempo minimo
