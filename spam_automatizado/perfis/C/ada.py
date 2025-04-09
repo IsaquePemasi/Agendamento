@@ -1250,7 +1250,7 @@ pyautogui.moveTo(x_central, y_central, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Faz o scroll para baixo X "cliques"
-pyautogui.scroll(-150)
+pyautogui.scroll(-10)
 ###################################################################################################
 # Espera 2 segundos
 time.sleep(1)
@@ -1282,7 +1282,7 @@ pyautogui.moveTo(x_central, y_central, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Faz o scroll para baixo X "cliques"
-pyautogui.scroll(-150)
+pyautogui.scroll(-10)
 # ###################################################################################################
 # Espera 2 segundos
 time.sleep(1)
