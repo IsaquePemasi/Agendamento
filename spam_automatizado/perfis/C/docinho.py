@@ -56,7 +56,6 @@ x20 = 308  # Coordenada X desejada
 y20 = 618  # Coordenada Y desejada
 ###################################################################################################
 def script_definitivo_click(): 
-
     tempo_de_espera = 0.2  
 
 # Aguardar 2 segundos antes de começar para dar tempo de colocar o foco na janela correta
@@ -1229,7 +1228,7 @@ pyautogui.click()
 # Espera o tempo minimo
 time.sleep(tempo_medio)
 # Move o mouse para a posição (x, y) na tela
-pyautogui.moveTo(xAgendamentoDireita, yAgendamentoDireita, duration = 1)
+pyautogui.moveTo(xAgendamento, yAgendamento, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Espera o tempo minimo
