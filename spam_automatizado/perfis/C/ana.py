@@ -14,46 +14,46 @@ xDia = 682
 yDia = 290
 x_central = 1072
 y_central = 351
-x1 = 297  # Coordenada X desejada
-y1 = 154  # Coordenada Y desejada
-x2 = 360  # Coordenada X desejada
-y2 = 224  # Coordenada Y desejada
-x3 = 278  # Coordenada X desejada
-y3 = 278  # Coordenada Y desejada
-x4 = 304  # Coordenada X desejada
-y4 = 269  # Coordenada Y desejada
-x5 = 305  # Coordenada X desejada
-y5 = 253  # Coordenada Y desejada
-x6 = 313  # Coordenada X desejada
-y6 = 294  # Coordenada Y desejada
-x7 = 302  # Coordenada X desejada
-y7 = 342  # Coordenada Y desejada
-x8 = 307  # Coordenada X desejada
-y8 = 329  # Coordenada Y desejada
-x9 = 301  # Coordenada X desejada
-y9 = 319  # Coordenada Y desejada
-x10 = 304  # Coordenada X desejada
-y10 = 306  # Coordenada Y desejada
-x11 = 323  # Coordenada X desejada
-y11 = 292  # Coordenada Y desejada
-x12 = 322  # Coordenada X desejada
-y12 = 282  # Coordenada Y desejada
-x13 = 313  # Coordenada X desejada
-y13 = 269  # Coordenada Y desejada
-x14 = 315  # Coordenada X desejada
-y14 = 257  # Coordenada Y desejada
-x15 = 322  # Coordenada X desejada
-y15 = 243  # Coordenada Y desejada
+x1 = 342  # Coordenada X desejada
+y1 = 156  # Coordenada Y desejada
+x2 = 318  # Coordenada X desejada
+y2 = 211  # Coordenada Y desejada
+x3 = 321  # Coordenada X desejada
+y3 = 269  # Coordenada Y desejada
+x4 = 313  # Coordenada X desejada
+y4 = 259  # Coordenada Y desejada
+x5 = 312  # Coordenada X desejada
+y5 = 247  # Coordenada Y desejada
+x6 = 308  # Coordenada X desejada
+y6 = 233  # Coordenada Y desejada
+x7 = 306  # Coordenada X desejada
+y7 = 221  # Coordenada Y desejada
+x8 = 309  # Coordenada X desejada
+y8 = 209  # Coordenada Y desejada
+x9 = 306  # Coordenada X desejada
+y9 = 194  # Coordenada Y desejada
+x10 = 301  # Coordenada X desejada
+y10 = 185  # Coordenada Y desejada
+x11 = 313  # Coordenada X desejada
+y11 = 174  # Coordenada Y desejada
+x12 = 327  # Coordenada X desejada
+y12 = 162  # Coordenada Y desejada
+x13 = 321  # Coordenada X desejada
+y13 = 150  # Coordenada Y desejada
+x14 = 311  # Coordenada X desejada
+y14 = 138  # Coordenada Y desejada
+x15 = 318  # Coordenada X desejada
+y15 = 124  # Coordenada Y desejada
 x16 = 388  # Coordenada X desejada
-y16 = 302  # Coordenada Y desejada
-x17 = 428  # Coordenada X desejada
-y17 = 412  # Coordenada Y desejada
-x18 = 309  # Coordenada X desejada
-y18 = 488  # Coordenada Y desejada
-x19 = 436  # Coordenada X desejada
-y19 = 526  # Coordenada Y desejada
-x20 = 408  # Coordenada X desejada
-y20 = 646  # Coordenada Y desejada
+y16 = 183  # Coordenada Y desejada
+x17 = 338  # Coordenada X desejada
+y17 = 289  # Coordenada Y desejada
+x18 = 336  # Coordenada X desejada
+y18 = 362  # Coordenada Y desejada
+x19 = 391  # Coordenada X desejada
+y19 = 473  # Coordenada Y desejada
+x20 = 308  # Coordenada X desejada
+y20 = 618  # Coordenada Y desejada
 ###################################################################################################
 def script_definitivo_click():
     tempo_de_espera = 0.2  
@@ -1249,7 +1249,7 @@ pyautogui.moveTo(x_central, y_central, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Faz o scroll para baixo X "cliques"
-pyautogui.scroll(-150)
+pyautogui.scroll(-10)
 ###################################################################################################
 # Espera 2 segundos
 time.sleep(1)
@@ -1281,7 +1281,7 @@ pyautogui.moveTo(x_central, y_central, duration = 1)
 # Realiza um clique na posição atual do mouse
 pyautogui.click()
 # Faz o scroll para baixo X "cliques"
-pyautogui.scroll(-150)
+pyautogui.scroll(-10)
 # ###################################################################################################
 # Espera 2 segundos
 time.sleep(1)
