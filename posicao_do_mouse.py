@@ -36,7 +36,7 @@ arquivosA = [
 ]
 
 arquivosB = [
-    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\18.py",
+    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\akame.py",
     r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\bulma.py",
     r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\goku.py",
     r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\lara.py",
@@ -44,7 +44,7 @@ arquivosB = [
     r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\Naruto.py",
     r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\rias.py",
     r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\saitama.py",
-    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\suporte.py",
+    r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\lucy.py",
     r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\winry.py",
     r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\yoruichi.py",
     r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\yuno.py",
