@@ -17,6 +17,7 @@ except:
 base_path = r"C:\Users\a925216\OneDrive - ATOS\Desktop\Agendamento\spam_automatizado\perfis\A"
 base_pathB = r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B"
 base_pathC = r"C:\Users\Isaque\Desktop\Agendamento\Agendamento\spam_automatizado\perfis\C"
+base_pathBA = r"C:\Users\USUARIO\Desktop\Agendamento\spam_automatizado\perfis\B\BA"
 
 # Dicionário para mapear personagens aos seus scripts
 character_scripts = {
